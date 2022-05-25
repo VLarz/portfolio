@@ -1,0 +1,63 @@
+$breakpoint-custom-height: 750px;
+$breakpoint-custom-mobile: 320px;
+$breakpoint-small-mobile: 479px;
+$breakpoint-col-sm: 575px;
+$breakpoint-tablet: 767px;
+$breakpoint-desktop: 991px;
+$breakpoint-desktop-sm-widescreen: 1199px;
+$breakpoint-desktop-md-widescreen: 1399px;
+$breakpoint-desktop-lg-widescreen: 1599px;
+
+@mixin desktop-lg-widescreen {
+	@media only screen and (max-width : #{$breakpoint-desktop-lg-widescreen}) {
+		@content;
+	}
+}
+
+@mixin desktop-md-widescreen {
+	@media only screen and (max-width : #{$breakpoint-desktop-md-widescreen}) {
+		@content;
+	}
+}
+
+@mixin desktop-sm-widescreen {
+	@media only screen and (max-width : #{$breakpoint-desktop-sm-widescreen}) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media only screen and (max-width : #{$breakpoint-desktop}) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media only screen and (max-width : #{$breakpoint-tablet}) {
+		@content;
+	}
+}
+
+@mixin col-sm {
+	@media only screen and (max-width : #{$breakpoint-col-sm}) {
+		@content;
+	}
+}
+
+@mixin small-mobile {
+	@media only screen and (max-width : #{$breakpoint-small-mobile}) {
+		@content;
+	}
+}
+
+@mixin custom-mobile {
+	@media only screen and (max-width : #{$breakpoint-custom-mobile}) {
+		@content;
+	}
+}
+
+@mixin custom-height {
+	@media only screen and (max-height : #{$breakpoint-custom-height}) and (max-width : #{$breakpoint-custom-height}) {
+		@content;
+	}
+}
