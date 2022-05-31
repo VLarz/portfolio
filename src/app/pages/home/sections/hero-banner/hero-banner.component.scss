@@ -6,7 +6,7 @@
   background: linear-gradient(
             rgba(0, 0, 0, 0.25),
             rgba(0, 0, 0, 0.25)),
-              url('/assets/images/hero-banner/laguna-mountain.jpg');
+              url('/assets/images/home/hero-banner/laguna-mountain.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -29,6 +29,7 @@
         .name {
           font-size: 60px;
           font-weight: 700;
+          letter-spacing: 2px;
         }
         .positions-container {
           display: flex;
