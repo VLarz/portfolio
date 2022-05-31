@@ -7,6 +7,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { HeroBannerComponent } from './pages/home/sections/hero-banner/hero-banner.component';
+import { AboutMeComponent } from './pages/home/sections/about-me/about-me.component';
+import { WorkExperienceComponent } from './pages/home/sections/work-experience/work-experience.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { HeroBannerComponent } from './pages/home/sections/hero-banner/hero-bann
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    HeroBannerComponent
+    HeroBannerComponent,
+    AboutMeComponent,
+    WorkExperienceComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,20 @@
+@import 'variables';
+
+.about-me {
+  padding: 100px 0;
+  .details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    .detail {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .description {
+        color: $secondary-color;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+}

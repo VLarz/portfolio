@@ -2,11 +2,15 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  color: $secondary-color;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $primary-font;
 }
 
-p, a {
+p, a, span {
   font-family: $secondary-font;
 }
 
@@ -19,4 +23,35 @@ p, a {
   &:hover {
     color: $white;
   }
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.section-divider {
+  margin-bottom: 50px;
+  .horizontal-divider {
+    background-color: $primary-color;
+    height: 2px;
+    &.small {
+      width: 40px;
+      height: 2.4px;
+    }
+    &.long {
+      width: 80px;
+      margin-bottom: 4px;
+      height: 2px;
+    }
+  }
+}
+
+.description {
+  color: $gray-color;
+  line-height: 32px;
+}
+
+.primary-color {
+  color: $primary-color;
 }
