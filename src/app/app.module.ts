@@ -9,7 +9,8 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { HeroBannerComponent } from './pages/home/sections/hero-banner/hero-banner.component';
 import { AboutMeComponent } from './pages/home/sections/about-me/about-me.component';
 import { WorkExperienceComponent } from './pages/home/sections/work-experience/work-experience.component';
-
+import { ExperiencesComponent } from './pages/home/sections/work-experience/components/experiences/experiences.component';
+import { TechnicalSkillsComponent } from './pages/home/sections/technical-skills/technical-skills.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,9 @@ import { WorkExperienceComponent } from './pages/home/sections/work-experience/w
     FooterComponent,
     HeroBannerComponent,
     AboutMeComponent,
-    WorkExperienceComponent
+    WorkExperienceComponent,
+    ExperiencesComponent,
+    TechnicalSkillsComponent,
   ],
   imports: [
     BrowserModule,
