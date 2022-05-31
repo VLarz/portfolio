@@ -32,19 +32,7 @@ p, a, span {
 
 .section-divider {
   margin-bottom: 50px;
-  .horizontal-divider {
-    background-color: $primary-color;
-    height: 2px;
-    &.small {
-      width: 40px;
-      height: 2.4px;
-    }
-    &.long {
-      width: 80px;
-      margin-bottom: 4px;
-      height: 2px;
-    }
-  }
+  width: 80px;
 }
 
 .description {
