@@ -9,3 +9,14 @@ h1, h2, h3, h4, h5, h6 {
 p, a {
   font-family: $secondary-font;
 }
+
+.primary-button {
+  padding: 14px 22px;
+  font-size: 14px;
+  color: $white;
+  border: 3px solid $white;
+  text-decoration: none;
+  &:hover {
+    color: $white;
+  }
+}
