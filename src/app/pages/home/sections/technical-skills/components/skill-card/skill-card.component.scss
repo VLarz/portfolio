@@ -1,0 +1,21 @@
+@import 'variables';
+
+.skill-card {
+  padding: 60px 60px;
+  .icon {
+    margin-bottom: 50px;
+  }
+  .title {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    .skill {
+      color: $gray-color;
+    }
+  }
+}
