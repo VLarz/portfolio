@@ -3,7 +3,3 @@
 @tailwind utilities;
 
 @import '@fontsource/inter';
-
-body {
-  font-family: 'Inter', sans-serif;
-}
