@@ -11,10 +11,13 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', ...fontFamily.sans],
       },
-    },
-    colors: {
-      black: `#040404`,
-      grey: `#A8A8A8`,
+      colors: {
+        black: `#040404`,
+        grey: `#A8A8A8`,
+      },
+      maxWidth: {
+        '8xl': '1440px',
+      },
     },
   },
   plugins: [],
