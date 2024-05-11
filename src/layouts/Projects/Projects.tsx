@@ -1,5 +1,6 @@
 import SectionContainer from '../../components/SectionContainer';
 import { projectsData } from './data';
+import Project from './Project';
 
 type Props = React.HTMLAttributes<HTMLDivElement>;
 
@@ -17,39 +18,9 @@ export default function Projects({}: Props) {
           for innovation and problem-solving
         </p>
       </div>
-      <div className={`grid grid-cols-3 gap-x-8`}>
+      <div className={`grid grid-cols-3 gap-x-8 gap-y-16`}>
         {projectList.map((project, index) => (
-          <div key={index} className={`space-y-4`}>
-            <img
-              src={project.image}
-              alt={project.title}
-              className={`w-full h-[380px] h-object-cover object-top`}
-            />
-            <h6 className="font-semibold">{project.title}</h6>
-            <p className={`text-sm text-grey`}>{project.description}</p>
-            {(project.links.web || project.links.figma) && (
-              <div className={`flex gap-x-2`}>
-                {project.links.web && (
-                  <a
-                    href={project.links.web}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src="/images/socials/web.svg" alt="web icon" />
-                  </a>
-                )}
-                {project.links.figma && (
-                  <a
-                    href={project.links.figma}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src="/images/socials/figma.svg" alt="figma icon" />
-                  </a>
-                )}
-              </div>
-            )}
-          </div>
+          <Project key={index} {...project} />
         ))}
       </div>
     </SectionContainer>
