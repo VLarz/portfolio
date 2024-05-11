@@ -1,12 +1,12 @@
-type Props = React.HTMLProps<HTMLDivElement>;
+type Props = React.HTMLAttributes<HTMLDivElement>;
 
-type Socials = {
+type Social = {
   name: string;
   url: string;
   icon: string;
 };
 
-const socials: Socials[] = [
+const socials: Social[] = [
   {
     name: 'linkedin',
     url: 'https://www.linkedin.com/in/vlarz/',

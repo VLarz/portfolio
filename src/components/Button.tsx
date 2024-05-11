@@ -1,4 +1,4 @@
-interface Props extends React.HTMLProps<HTMLButtonElement> {
+interface Props extends React.HTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary';
 }
 

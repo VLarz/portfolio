@@ -2,11 +2,11 @@ import Button from '../components/Button';
 import SectionContainer from '../components/SectionContainer';
 import Socials from '../components/Socials';
 
-type Props = React.HTMLProps<HTMLDivElement>;
+type Props = React.HTMLAttributes<HTMLDivElement>;
 
-export default function HeroBanner({ children }: Props) {
+export default function HeroBanner({}: Props) {
   return (
-    <SectionContainer>
+    <SectionContainer className={`px-0 py-0`}>
       <div
         className={`hero-grid h-[700px] flex justify-center items-center relative`}
       >
