@@ -1,3 +1,4 @@
+import Button from '../components/Button';
 import SectionContainer from '../components/SectionContainer';
 import Socials from '../components/Socials';
 
@@ -21,11 +22,7 @@ export default function HeroBanner({ children }: Props) {
               {` `}
               and <span className={`text-white`}>appealing</span> to the eye.
             </p>
-            <button
-              className={`bg-white px-8 py-4 rounded-lg text-sm font-semibold text-black drop-shadow-[0_4px_0_rgba(255,255,255,0.7)]`}
-            >
-              Download Resume
-            </button>
+            <Button>Download Resume</Button>
           </div>
           <div className={`mt-16`}>
             <p className={`text-grey`}>Check out my</p>
