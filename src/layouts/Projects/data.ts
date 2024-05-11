@@ -47,7 +47,7 @@ export const projectsData: Project[] = [
   },
   {
     title: `Yogorino`,
-    description: `A e-commerce where customers can easily browse and order their favorite dessert online, providing a seamless and convenient dining experience.`,
+    description: `An e-commerce where customers can easily browse and order their favorite dessert online, providing a seamless and convenient dining experience.`,
     image: `/images/projects/yogorino.webp`,
     links: {
       web: ``,
@@ -61,6 +61,150 @@ export const projectsData: Project[] = [
     links: {
       web: ``,
       figma: `https://www.figma.com/file/GuksEJW3TDCPgpnbf4gz6N/CopperMask-Website-Revamp?type=design&node-id=0-1&mode=design`,
+    },
+  },
+  {
+    title: `Zouq`,
+    description: `lorem ipsum`,
+    image: `/images/projects/zouq.webp`,
+    links: {
+      web: ``,
+      figma: `https://www.figma.com/file/EeTVDU2uQCCivXi1Rk86Ld/Zouq-Marketing?type=design&node-id=0%3A1&mode=design&t=xZxGbSvsRmTFdPB2-1`,
+    },
+  },
+  {
+    title: `Cloud Panda PH`,
+    description: `lorem ipsum`,
+    image: `/images/projects/cloud-panda-ph.webp`,
+    links: {
+      web: `https://cloudpanda.ph/`,
+      figma: `https://www.figma.com/file/fRWuBsFWmG4P8fDsqd12vU/Cloud-Panda-Website?type=design&node-id=0-1&mode=design&t=DMULa2VTijaTFo26-0`,
+    },
+  },
+  {
+    title: `My Portfolio v1`,
+    description: `lorem ipsum`,
+    image: `/images/projects/my-portfolio-v1.webp`,
+    links: {
+      web: ``,
+      figma: `https://www.figma.com/design/AGS57cKM9zFRxeZcbQSC6m/My-Portfolio-v1?node-id=0%3A1&t=FFlLEQPK4wBPug5A-1`,
+    },
+  },
+  {
+    title: `Nutshell`,
+    description: `lorem ipsum`,
+    image: `/images/projects/nutshell.webp`,
+    links: {
+      web: `https://nutshell.ph/`,
+      figma: `https://www.figma.com/file/me0z4wephBBGY0TL92qY5f/Nutshell-Website?type=design&mode=design&t=ASoFBpHRoKqEMtwn-0`,
+    },
+  },
+  {
+    title: `Pristine`,
+    description: `Bitcoin-backed loans platform that features Bitcoin Mortgage, Multi-sig Loans, and Trustless Lightning Loans.`,
+    image: `/images/projects/pristine.webp`,
+    links: {
+      web: `https://nutshell.ph/`,
+      figma: `https://www.figma.com/file/11rGtHrWZ12ZyRi6MzckQd/Pristine?type=design&node-id=0%3A1&mode=design&t=2pj9zw0YMTHeCIX5-1`,
+    },
+  },
+  {
+    title: `Quest:Citizens`,
+    description: `A collection of 2,500 Quest: Citizens represent the adventure to frontiers equipped with new powers never before seen in Solana.`,
+    image: `/images/projects/quest-citizens.webp`,
+    links: {
+      web: ``,
+      figma: ``,
+    },
+  },
+  {
+    title: `TheQuestHub v2`,
+    description: `Peer2Peer uncollateral USDC loan marketplace powered by Solana and Polygon.`,
+    image: `/images/projects/thequesthub-v2.webp`,
+    links: {
+      web: ``,
+      figma: `https://www.figma.com/design/BrKlrTMWKxKGJVv3tCPjXp/TheQuestHub-v2?node-id=851%3A171&t=2NhotrlXusVmFNe2-1`,
+    },
+  },
+  {
+    title: `TheQuestHub v1`,
+    description: `lorem ipsum`,
+    image: `/images/projects/thequesthub-v1.webp`,
+    links: {
+      web: ``,
+      figma: `https://www.figma.com/design/VnBTVohMjE7WwabeAfB77d/TheQuestHub?node-id=0%3A1&t=lPJPfwEiK9prYrpu-1`,
+    },
+  },
+  {
+    title: `Siomai King`,
+    description: `lorem ipsum`,
+    image: `/images/projects/siomai-king.webp`,
+    links: {
+      web: `https://siomaiking.ph/`,
+      figma: ``,
+    },
+  },
+  {
+    title: `toktok`,
+    description: `lorem ipsum`,
+    image: `/images/projects/toktok.webp`,
+    links: {
+      web: `https://toktok.ph/`,
+      figma: `https://www.figma.com/design/UsmhBDIK2sFzzJpRzByjRL/toktoksuper-Website?node-id=0%3A1&t=vsK2QxOdJaFTicPM-1`,
+    },
+  },
+  {
+    title: `toktokmall`,
+    description: `lorem ipsum`,
+    image: `/images/projects/toktokmall.webp`,
+    links: {
+      web: `https://toktokmall.ph/`,
+      figma: `https://www.figma.com/design/yU3uAQJrORAb0fdjisrHHp/toktokmall-web?node-id=1%3A148&t=lBwz46xx5dl4gmfe-1`,
+    },
+  },
+  {
+    title: `toktokfood`,
+    description: `lorem ipsum`,
+    image: `/images/projects/toktokfood.webp`,
+    links: {
+      web: `https://toktokfood.ph/`,
+      figma: ``,
+    },
+  },
+  {
+    title: `toktokwallet`,
+    description: `lorem ipsum`,
+    image: `/images/projects/toktokwallet.webp`,
+    links: {
+      web: `https://wallet.toktok.ph/`,
+      figma: `https://www.figma.com/design/F8pniqNOskEKk7FRCOAcZz/toktokwallet-Website?node-id=0%3A1&t=AXnojiyb2kDk9YvM-1`,
+    },
+  },
+  {
+    title: `toktokgo`,
+    description: `lorem ipsum`,
+    image: `/images/projects/toktokgo.webp`,
+    links: {
+      web: `https://go.toktok.ph/`,
+      figma: `https://www.figma.com/design/1PW9nT1pB3LqaFNdGUt3JU/toktokgo-Website?node-id=0%3A1&t=8UH5SKHmB22Ko0EK-1`,
+    },
+  },
+  {
+    title: `toktokdelivery`,
+    description: `lorem ipsum`,
+    image: `/images/projects/toktokdelivery.webp`,
+    links: {
+      web: `https://toktok.ph/book/home`,
+      figma: `https://www.figma.com/file/MrMB6H4CHLezYMaMUOjD6Y/toktokdelivery-website?type=design&node-id=0%3A1&mode=design&t=yPms5fLdSh3XKjAN-1`,
+    },
+  },
+  {
+    title: `Ninja PH`,
+    description: `lorem ipsum`,
+    image: `/images/projects/ninja-ph.webp`,
+    links: {
+      web: `ht`,
+      figma: `https://www.figma.com/file/uQNvWBXgxFkoISbwNiEeFB/Ninja-PH?type=design&node-id=0%3A1&mode=design&t=NFSNdpLCUZ9N6yZC-1`,
     },
   },
 ];
