@@ -25,7 +25,7 @@ export default function HeroBanner({}: Props) {
             <Button>Download Resume</Button>
           </div>
           <div className={`mt-16`}>
-            <p className={`text-grey`}>Check out my</p>
+            <p>Check out my</p>
             <Socials />
           </div>
         </div>
