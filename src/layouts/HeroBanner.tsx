@@ -1,4 +1,5 @@
 import SectionContainer from '../components/SectionContainer';
+import Socials from '../components/Socials';
 
 type Props = React.HTMLProps<HTMLDivElement>;
 
@@ -28,23 +29,7 @@ export default function HeroBanner({ children }: Props) {
           </div>
           <div className={`mt-16`}>
             <p className={`text-grey`}>Check out my</p>
-            <div className={`flex justify-center space-x-2 mt-4`}>
-              <img
-                src="/images/icons/linkedin.svg"
-                alt="linkedin"
-                className={`transition-opacity hover:opacity-70`}
-              />
-              <img
-                src="/images/icons/github.svg"
-                alt="github"
-                className={`transition-opacity hover:opacity-70`}
-              />
-              <img
-                src="/images/icons/x.svg"
-                alt="x"
-                className={`transition-opacity hover:opacity-70`}
-              />
-            </div>
+            <Socials />
           </div>
         </div>
         <img
