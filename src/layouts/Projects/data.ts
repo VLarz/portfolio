@@ -205,7 +205,7 @@ export const projectsData: Project[] = [
     description: `lorem ipsum`,
     image: `/images/projects/ninja-ph.webp`,
     links: {
-      web: `ht`,
+      web: ``,
       figma: `https://www.figma.com/file/uQNvWBXgxFkoISbwNiEeFB/Ninja-PH?type=design&node-id=0%3A1&mode=design&t=NFSNdpLCUZ9N6yZC-1`,
     },
   },
