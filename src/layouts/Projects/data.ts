@@ -30,7 +30,7 @@ export const projectsData: Project[] = [
   {
     title: `BitLink`,
     description: `A fully functioning Bitcoin(BTC) web wallet accessed via link (URL). Think of it like a gift card, red envelope, 红包 hóngbāo or laisee.`,
-    image: `/images/projects/bitLink.webp`,
+    image: `/images/projects/bitlink.webp`,
     links: {
       web: ``,
       figma: `https://www.figma.com/file/FfphriutK9eo33WAOS5ACd/Bitlink?type=design&node-id=0%3A1&mode=design&t=iDjXgbzctWGUGZZE-1`,
