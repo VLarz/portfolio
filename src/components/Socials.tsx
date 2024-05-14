@@ -38,7 +38,7 @@ export default function Socials({ className, style }: Props) {
           rel="noopener noreferrer"
         >
           <img
-            src={social.icon}
+            src={process.env.PUBLIC_URL + social.icon}
             alt={social.name}
             className={`transition-opacity opacity-40 hover:opacity-100`}
           />

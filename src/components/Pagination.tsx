@@ -27,7 +27,11 @@ export default function Pagination({
         onClick={handlePrevPage}
         disabled={currentPage === 1}
       >
-        <img src="/images/icons/prev.svg" alt="prev" className="h-6 w-6" />
+        <img
+          src={process.env.PUBLIC_URL + `/images/icons/prev.svg`}
+          alt="prev"
+          className="h-6 w-6"
+        />
       </Button>
       <Button
         type="button"
@@ -35,7 +39,11 @@ export default function Pagination({
         onClick={handleNextPage}
         disabled={currentPage === totalPages}
       >
-        <img src="/images/icons/next.svg" alt="next" className="h-6 w-6" />
+        <img
+          src={process.env.PUBLIC_URL + `/images/icons/next.svg`}
+          alt="next"
+          className="h-6 w-6"
+        />
       </Button>
     </div>
   );

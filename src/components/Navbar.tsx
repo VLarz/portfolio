@@ -22,7 +22,11 @@ export default function Navbar({}: Props) {
       <div
         className={`max-w-8xl px-6 sm:px-8 lg:px-16 flex justify-between w-full`}
       >
-        <img src="/logo.svg" alt="Vhen Larson Dela Cuesta" className={`w-32`} />
+        <img
+          src={process.env.PUBLIC_URL + `/logo.svg`}
+          alt="Vhen Larson Dela Cuesta"
+          className={`w-32`}
+        />
         <ul className={`flex items-center gap-x-6`}>
           {navMenu.map((menu, index) => (
             <li key={index} className={`text-sm lg:text-base font-semibold`}>

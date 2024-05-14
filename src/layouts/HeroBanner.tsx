@@ -29,7 +29,9 @@ export default function HeroBanner({}: Props) {
               className={`block`}
               download
             >
-              <Button type="submit" className={`!px-4 md:!px-8 !py-3 md:!py-4`}>Download Resume</Button>
+              <Button type="submit" className={`!px-4 md:!px-8 !py-3 md:!py-4`}>
+                Download Resume
+              </Button>
             </a>
           </div>
           <div className={`mt-16`}>
@@ -38,7 +40,7 @@ export default function HeroBanner({}: Props) {
           </div>
         </div>
         <img
-          src="/images/hero/dot-background.svg"
+          src={process.env.PUBLIC_URL + `/images/hero/dot-background.svg`}
           alt="dot-background"
           className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1200px] opacity-70`}
         />
