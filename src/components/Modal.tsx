@@ -16,7 +16,7 @@ export default function Modal({ showModal, handleClose, imageSrc }: Props) {
             src={imageSrc}
             alt={imageSrc}
             loading="lazy"
-            className={`h-full w-auto mx-auto  cursor-zoom-out`}
+            className={`h-full w-auto object-contain mx-auto cursor-zoom-out`}
           />
         </div>
       )}
