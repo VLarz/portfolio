@@ -13,7 +13,7 @@ export default function Modal({ showModal, handleClose, imageSrc }: Props) {
           className={`fixed z-50 top-0 h-screen w-screen bg-black bg-opacity-70 py-8`}
         >
           <img
-            src={imageSrc}
+            src={process.env.PUBLIC_URL + imageSrc}
             alt={imageSrc}
             loading="lazy"
             className={`h-full w-auto object-contain mx-auto cursor-zoom-out`}
