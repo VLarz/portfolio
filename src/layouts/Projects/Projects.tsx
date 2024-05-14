@@ -4,11 +4,13 @@ import SectionContainer from '../../components/SectionContainer';
 import { projectsData } from './data';
 import Project from './Project';
 
-type Props = React.HTMLAttributes<HTMLDivElement>;
+interface Props extends React.HTMLAttributes<HTMLDivElement> {
+  handleOpenModal?: (imageSrc: string) => void;
+}
 
 const ITEMS_PER_PAGE = 6;
 
-export default function Projects({}: Props) {
+export default function Projects({ handleOpenModal }: Props) {
   const [currentPage, setCurrentPage] = useState(1);
 
   const totalPages = Math.ceil(projectsData.length / ITEMS_PER_PAGE);
@@ -62,6 +64,7 @@ export default function Projects({}: Props) {
             {...project}
             figmaLink={project.links.figma}
             webLink={project.links.web}
+            handleOpenModal={handleOpenModal}
           />
         ))}
       </div>

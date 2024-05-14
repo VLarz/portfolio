@@ -4,6 +4,7 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
   description: string;
   webLink?: string;
   figmaLink?: string;
+  handleOpenModal?: (imageSrc: string) => void;
 }
 
 export default function Project({
@@ -12,14 +13,21 @@ export default function Project({
   description,
   webLink,
   figmaLink,
+  handleOpenModal,
 }: Props) {
+  const handleClick = () => {
+    if (handleOpenModal) {
+      handleOpenModal(image);
+    }
+  };
   return (
     <div className={`space-y-4`}>
       <img
         src={image}
         alt={title}
         loading="lazy"
-        className={`w-full h-[410px] h-object-cover object-top`}
+        className={`w-full h-[410px] h-object-cover object-top cursor-zoom-in`}
+        onClick={handleClick}
       />
       <h6 className="font-semibold">{title}</h6>
       <p className={`text-sm text-grey`}>{description}</p>
