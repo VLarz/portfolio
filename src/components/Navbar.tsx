@@ -7,11 +7,11 @@ type NavMenu = {
 
 const navMenu: NavMenu[] = [
   {
-    url: `/#projects`,
+    url: `#projects`,
     label: `Projects`,
   },
   {
-    url: `/#services`,
+    url: `#services`,
     label: `Services`,
   },
 ];
