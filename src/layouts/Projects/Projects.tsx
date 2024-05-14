@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Button from '../../components/Button';
+import Pagination from '../../components/Pagination';
 import SectionContainer from '../../components/SectionContainer';
 import { projectsData } from './data';
 import Project from './Project';
@@ -40,32 +40,12 @@ export default function Projects({}: Props) {
             <p className={`text-end text-sm`}>
               {currentPage}/{totalPages}
             </p>
-            <div className="space-x-4">
-              <Button
-                type="button"
-                className="!p-2"
-                onClick={handlePrevPage}
-                disabled={currentPage === 1}
-              >
-                <img
-                  src="/images/icons/prev.svg"
-                  alt="prev"
-                  className="h-6 w-6"
-                />
-              </Button>
-              <Button
-                type="button"
-                className="!p-2"
-                onClick={handleNextPage}
-                disabled={currentPage === totalPages}
-              >
-                <img
-                  src="/images/icons/next.svg"
-                  alt="next"
-                  className="h-6 w-6"
-                />
-              </Button>
-            </div>
+            <Pagination
+              handlePrevPage={handlePrevPage}
+              handleNextPage={handleNextPage}
+              currentPage={currentPage}
+              totalPages={totalPages}
+            />
           </div>
         </div>
         <p className="text-grey mt-4">
