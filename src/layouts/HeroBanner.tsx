@@ -32,7 +32,7 @@ export default function HeroBanner({}: Props) {
         <img
           src="/images/hero/dot-background.svg"
           alt="dot-background"
-          className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1200px] opacity-90`}
+          className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1200px] opacity-70`}
         />
       </div>
     </SectionContainer>
