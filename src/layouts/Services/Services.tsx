@@ -18,7 +18,7 @@ const projectList = [...ProjectData];
 
 export default function Services({}: Props) {
   return (
-    <SectionContainer className="space-y-16">
+    <SectionContainer id="services" className="space-y-16">
       <div className={`space-y-4`}>
         <h1 className="text-4xl font-semibold">My Services</h1>
         <p className="text-grey">

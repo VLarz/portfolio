@@ -6,7 +6,7 @@ type Props = React.HTMLAttributes<HTMLDivElement>;
 
 export default function HeroBanner({}: Props) {
   return (
-    <SectionContainer className={`px-0 py-0`}>
+    <SectionContainer className={`px-0 py-0 -mt-24`}>
       <div
         className={`hero-grid h-[700px] flex justify-center items-center relative`}
       >

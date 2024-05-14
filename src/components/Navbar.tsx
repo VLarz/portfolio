@@ -7,10 +7,6 @@ type NavMenu = {
 
 const navMenu: NavMenu[] = [
   {
-    url: `/#skills`,
-    label: `Skills`,
-  },
-  {
     url: `/#projects`,
     label: `Projects`,
   },
@@ -24,7 +20,7 @@ export default function Navbar({ className, style, ...props }: Props) {
   return (
     <nav
       {...props}
-      className={`fixed top-0 w-full flex justify-center items-center py-8 ${className}`}
+      className={`w-full flex justify-center items-center py-8 ${className}`}
       style={style}
     >
       <div className={`max-w-8xl px-16 flex justify-between w-full`}>
