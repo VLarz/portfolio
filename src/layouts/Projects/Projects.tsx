@@ -34,33 +34,38 @@ export default function Projects({}: Props) {
   return (
     <SectionContainer className="space-y-16 -mt-16">
       <div>
-        <div className={`flex justify-between`}>
+        <div className={`flex justify-between items-end`}>
           <h1 className="text-4xl font-semibold">My Projects</h1>
-          <div className="space-x-4">
-            <Button
-              type="button"
-              className="!p-3"
-              onClick={handlePrevPage}
-              disabled={currentPage === 1}
-            >
-              <img
-                src="/images/icons/prev.svg"
-                alt="prev"
-                className="h-6 w-6"
-              />
-            </Button>
-            <Button
-              type="button"
-              className="!p-3"
-              onClick={handleNextPage}
-              disabled={currentPage === totalPages}
-            >
-              <img
-                src="/images/icons/next.svg"
-                alt="next"
-                className="h-6 w-6"
-              />
-            </Button>
+          <div className={`space-y-2`}>
+            <p className={`text-end text-sm`}>
+              {currentPage}/{totalPages}
+            </p>
+            <div className="space-x-4">
+              <Button
+                type="button"
+                className="!p-2"
+                onClick={handlePrevPage}
+                disabled={currentPage === 1}
+              >
+                <img
+                  src="/images/icons/prev.svg"
+                  alt="prev"
+                  className="h-6 w-6"
+                />
+              </Button>
+              <Button
+                type="button"
+                className="!p-2"
+                onClick={handleNextPage}
+                disabled={currentPage === totalPages}
+              >
+                <img
+                  src="/images/icons/next.svg"
+                  alt="next"
+                  className="h-6 w-6"
+                />
+              </Button>
+            </div>
           </div>
         </div>
         <p className="text-grey mt-4">
