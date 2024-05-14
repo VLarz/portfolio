@@ -22,7 +22,13 @@ export default function HeroBanner({}: Props) {
               {` `}
               and <span className={`text-white`}>appealing</span> to the eye.
             </p>
-            <Button type="button">Download Resume</Button>
+            <a
+              href="/files/DELA CUESTA, VHEN LARSON A. - RESUME.pdf"
+              className={`block`}
+              download
+            >
+              <Button type="submit">Download Resume</Button>
+            </a>
           </div>
           <div className={`mt-16`}>
             <p>Check out my</p>
