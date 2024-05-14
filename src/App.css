@@ -8,3 +8,18 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.typed-words::after {
+  content: '|';
+  animation: blink ease 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
