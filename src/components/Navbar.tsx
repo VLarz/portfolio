@@ -11,7 +11,7 @@ const navMenu: NavMenu[] = [
     label: `Projects`,
   },
   {
-    url: `#services`,
+    url: `/#services`,
     label: `Services`,
   },
 ];
