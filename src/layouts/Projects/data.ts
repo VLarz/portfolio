@@ -51,7 +51,7 @@ export const projectsData: Project[] = [
     image: `/images/projects/alaga.webp`,
     links: {
       web: `https://www.alaga.ph/`,
-      figma: `https://www.figma.com/file/LVf08ixx7AReDOX75YESSD/Coffee-Life-Website?type=design&node-id=0-1&mode=design&t=TXNaSrMf7ad9T7ha-0`,
+      figma: `https://www.figma.com/design/eKDes3AOTK8KNGoX4XFk6N/Alaga-PH?node-id=1%3A2&t=8O54ebiYj27zfc32-1`,
     },
   },
   {
@@ -129,7 +129,7 @@ export const projectsData: Project[] = [
   },
   {
     title: `TheQuestHub v1`,
-    description: `lorem ipsum`,
+    description: `Think of it as a combination of Rotten Tomatoes and Wikipedia, where you can review, comment on, and edit content about play-to-earn games.`,
     image: `/images/projects/thequesthub-v1.webp`,
     links: {
       web: ``,
@@ -138,7 +138,7 @@ export const projectsData: Project[] = [
   },
   {
     title: `coffee:life`,
-    description: `lorem ipsum`,
+    description: `coffee:life is a coffee company at heart. We just want to focus on one thing - coffee. Some call it obsession, some say it's passion. We take small steps; but at times, we take that leap.`,
     image: `/images/projects/coffee-life.webp`,
     links: {
       web: `https://www.coffeelife.ph/`,
@@ -157,7 +157,7 @@ export const projectsData: Project[] = [
   },
   {
     title: `Zouq`,
-    description: `lorem ipsum`,
+    description: `Zouq: Your One Stop Halal Destination. Discover the ease and convenience of finding Halal products and services here in Zouq halal marketplace. Join us today and be a part of a thriving community.`,
     image: `/images/projects/zouq.webp`,
     links: {
       web: ``,
@@ -166,7 +166,7 @@ export const projectsData: Project[] = [
   },
   {
     title: `Cloud Panda PH`,
-    description: `lorem ipsum`,
+    description: `A Cloud Panda PH company website showcasing their services, partners, achievements, and completed projects..`,
     image: `/images/projects/cloud-panda-ph.webp`,
     links: {
       web: `https://cloudpanda.ph/`,
@@ -184,7 +184,7 @@ export const projectsData: Project[] = [
   },
   {
     title: `Nutshell`,
-    description: `lorem ipsum`,
+    description: `Stay updated wherever, whenever. Nutshell is the go-to app for summarized yet informative news right in your hands. Download for FREE.`,
     image: `/images/projects/nutshell.webp`,
     links: {
       web: `https://nutshell.ph/`,
@@ -193,7 +193,7 @@ export const projectsData: Project[] = [
   },
   {
     title: `Siomai King`,
-    description: `lorem ipsum`,
+    description: `Siomai King, established in 2010 and known as "Ang Hari ng Siomai," was the first to offer 5 pieces of siomai per serving. Each bite is flavorful and free of extenders, providing great value. With unique variants like Shanghai, Hong Kong, Japanese, and Chicken Siomai, customers keep returning for more.`,
     image: `/images/projects/siomai-king.webp`,
     links: {
       web: `https://siomaiking.ph/`,
