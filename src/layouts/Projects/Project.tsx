@@ -18,6 +18,7 @@ export default function Project({
       <img
         src={image}
         alt={title}
+        loading="lazy"
         className={`w-full h-[410px] h-object-cover object-top`}
       />
       <h6 className="font-semibold">{title}</h6>

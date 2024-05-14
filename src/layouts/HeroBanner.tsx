@@ -22,7 +22,7 @@ export default function HeroBanner({}: Props) {
               {` `}
               and <span className={`text-white`}>appealing</span> to the eye.
             </p>
-            <Button>Download Resume</Button>
+            <Button type="button">Download Resume</Button>
           </div>
           <div className={`mt-16`}>
             <p>Check out my</p>
