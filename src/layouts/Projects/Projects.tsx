@@ -34,19 +34,19 @@ export default function Projects({}: Props) {
   return (
     <SectionContainer className="space-y-16 -mt-16">
       <div>
-        <div className={`flex justify-between items-end`}>
+        <div className={`flex justify-between`}>
           <h1 className="text-4xl font-semibold">My Projects</h1>
-          <div className={`space-y-2`}>
-            <p className={`text-end text-sm`}>
+          {/* <div className={`space-y-2`}> */}
+          {/* <p className={`text-end text-sm`}>
               {currentPage}/{totalPages}
-            </p>
-            <Pagination
-              handlePrevPage={handlePrevPage}
-              handleNextPage={handleNextPage}
-              currentPage={currentPage}
-              totalPages={totalPages}
-            />
-          </div>
+            </p> */}
+          <Pagination
+            handlePrevPage={handlePrevPage}
+            handleNextPage={handleNextPage}
+            currentPage={currentPage}
+            totalPages={totalPages}
+          />
+          {/* </div> */}
         </div>
         <p className="text-grey mt-4">
           Discover my portfolio, a showcase of creative and impactful projects.
