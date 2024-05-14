@@ -19,7 +19,7 @@ const navMenu: NavMenu[] = [
 export default function Navbar({}: Props) {
   return (
     <nav className={`flex justify-center items-center py-8`}>
-      <div className={`max-w-8xl px-16 flex justify-between w-full`}>
+      <div className={`max-w-8xl px-6 sm:px-8 lg:px-16 flex justify-between w-full`}>
         <h1 className={`font-bold text-2xl`}>VLarz</h1>
         <ul className={`flex gap-x-6`}>
           {navMenu.map((menu, index) => (

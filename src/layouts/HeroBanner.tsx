@@ -6,17 +6,19 @@ type Props = React.HTMLAttributes<HTMLDivElement>;
 
 export default function HeroBanner({}: Props) {
   return (
-    <SectionContainer className={`px-0 py-0 -mt-24`}>
+    <SectionContainer className={`!px-0 py-0 -mt-24`}>
       <div
-        className={`hero-grid h-[700px] flex justify-center items-center relative`}
+        className={`hero-grid h-[600px] lg:h-[700px] flex justify-center items-center relative`}
       >
-        <div className={`text-center max-w-3xl z-10`}>
-          <div className={`space-y-6`}>
-            <h1 className={`text-5xl font-bold`}>
+        <div className={`text-center lg:max-w-3xl z-10 px-6 sm:px-8 lg:px-0`}>
+          <div className={`space-y-4 lg:space-y-6`}>
+            <h1 className={`text-4xl lg:text-5xl font-bold`}>
               Hi, I’m Vhen Larson Dela Cuesta
             </h1>
-            <h2 className={`text-4xl font-bold`}>A Front-End Web Developer</h2>
-            <p className={`text-xl text-grey`}>
+            <h2 className={`text-2xl md:text-3xl lg:text-4xl font-bold`}>
+              A Front-End Web Developer
+            </h2>
+            <p className={`text-md md:text-lg lg:text-xl text-grey`}>
               I have a passion for designing web applications that are{` `}
               <span className={`text-white`}>user-friendly</span>
               {` `}
@@ -27,7 +29,7 @@ export default function HeroBanner({}: Props) {
               className={`block`}
               download
             >
-              <Button type="submit">Download Resume</Button>
+              <Button type="submit" className={`!px-4 md:!px-8 !py-3 md:!py-4`}>Download Resume</Button>
             </a>
           </div>
           <div className={`mt-16`}>

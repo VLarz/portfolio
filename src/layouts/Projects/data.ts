@@ -19,12 +19,12 @@ export const projectsData: Project[] = [
     },
   },
   {
-    title: `Pristine`,
-    description: `Bitcoin-backed loans platform that features Bitcoin Mortgage, Multi-sig Loans, and Trustless Lightning Loans.`,
-    image: `/images/projects/pristine.webp`,
+    title: `Cloud Panda PH`,
+    description: `A Cloud Panda PH company website showcasing their services, partners, achievements, and completed projects..`,
+    image: `/images/projects/cloud-panda-ph.webp`,
     links: {
-      web: ``,
-      figma: `https://www.figma.com/file/11rGtHrWZ12ZyRi6MzckQd/Pristine?type=design&node-id=0%3A1&mode=design&t=2pj9zw0YMTHeCIX5-1`,
+      web: `https://cloudpanda.ph/`,
+      figma: `https://www.figma.com/file/fRWuBsFWmG4P8fDsqd12vU/Cloud-Panda-Website?type=design&node-id=0-1&mode=design&t=DMULa2VTijaTFo26-0`,
     },
   },
   {
@@ -165,12 +165,12 @@ export const projectsData: Project[] = [
     },
   },
   {
-    title: `Cloud Panda PH`,
-    description: `A Cloud Panda PH company website showcasing their services, partners, achievements, and completed projects..`,
-    image: `/images/projects/cloud-panda-ph.webp`,
+    title: `Pristine`,
+    description: `Bitcoin-backed loans platform that features Bitcoin Mortgage, Multi-sig Loans, and Trustless Lightning Loans.`,
+    image: `/images/projects/pristine.webp`,
     links: {
-      web: `https://cloudpanda.ph/`,
-      figma: `https://www.figma.com/file/fRWuBsFWmG4P8fDsqd12vU/Cloud-Panda-Website?type=design&node-id=0-1&mode=design&t=DMULa2VTijaTFo26-0`,
+      web: ``,
+      figma: `https://www.figma.com/file/11rGtHrWZ12ZyRi6MzckQd/Pristine?type=design&node-id=0%3A1&mode=design&t=2pj9zw0YMTHeCIX5-1`,
     },
   },
   {

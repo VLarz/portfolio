@@ -4,6 +4,7 @@ html {
 
 .hero-grid {
   background-image: url('/public/images/hero/grid-background.svg');
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }

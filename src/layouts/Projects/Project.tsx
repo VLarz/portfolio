@@ -26,7 +26,7 @@ export default function Project({
         src={image}
         alt={title}
         loading="lazy"
-        className={`w-full h-[410px] h-object-cover object-top cursor-zoom-in`}
+        className={`w-full h-[360px] 3xl:h-[410px] object-cover object-top cursor-zoom-in`}
         onClick={handleClick}
       />
       <h6 className="font-semibold">{title}</h6>

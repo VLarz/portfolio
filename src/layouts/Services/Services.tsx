@@ -28,7 +28,7 @@ export default function Services({}: Props) {
           for innovation and problem-solving
         </p>
       </div>
-      <div className={`flex gap-x-8`}>
+      <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-8`}>
         {projectList.map((skill, index) => (
           <Service key={index} {...skill} />
         ))}

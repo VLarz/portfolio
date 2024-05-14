@@ -47,6 +47,7 @@ export default function Projects({ handleOpenModal }: Props) {
             handleNextPage={handleNextPage}
             currentPage={currentPage}
             totalPages={totalPages}
+            className={`hidden lg:block`}
           />
           {/* </div> */}
         </div>
@@ -57,7 +58,7 @@ export default function Projects({ handleOpenModal }: Props) {
           for innovation and problem-solving.
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-x-8 gap-y-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
         {paginationProjects.map((project, index) => (
           <Project
             key={index}
@@ -67,6 +68,15 @@ export default function Projects({ handleOpenModal }: Props) {
             handleOpenModal={handleOpenModal}
           />
         ))}
+      </div>
+      <div>
+        <Pagination
+          handlePrevPage={handlePrevPage}
+          handleNextPage={handleNextPage}
+          currentPage={currentPage}
+          totalPages={totalPages}
+          className={`flex lg:hidden justify-center`}
+        />
       </div>
     </SectionContainer>
   );
