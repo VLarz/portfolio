@@ -5,7 +5,7 @@ import Socials from '../components/Socials';
 
 type Props = React.HTMLAttributes<HTMLDivElement>;
 
-const words = ['Front-End Web Developer', 'UI/UX Designer'];
+const words = ['Front-End Web Developer', 'Web Designer'];
 
 export default function HeroBanner({ ...props }: Props) {
   const textRef = useRef<HTMLSpanElement>(null);
