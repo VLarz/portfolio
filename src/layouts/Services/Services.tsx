@@ -23,10 +23,9 @@ export default function Services({}: Props) {
         <h1 className="text-3xl lg:text-4xl font-semibold">My Services</h1>
         <p className="text-grey">
           Unlock the potential of your business with my professional services. I
-          specialize in web development and web design, offering bespoke
-          solutions that align with your goals. Explore my services to see how
-          we can collaborate to create something exceptional, tailored just for
-          you.
+          specialize in web development and web design, providing custom-made
+          websites that align with your goals. Explore my services to see how we
+          can collaborate to create something exceptional, made just for you.
         </p>
         <div className={`flex flex-wrap gap-x-6 gap-y-2`}>
           {skills.map((skill, index) => (

@@ -75,9 +75,9 @@ export default function Projects({ handleOpenModal }: Props) {
         </div>
         <p className="text-grey mt-4">
           Discover my portfolio, a showcase of creative and impactful projects.
-          From graphic design to web development, each project reflects my
-          commitment to excellence. Explore the details and witness my passion
-          for innovation and problem-solving.
+          From graphic design to web development, each project shows my
+          dedication to quality. Look at each of my project to see my enthusiasm
+          for creativity and problem solving.
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
