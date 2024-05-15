@@ -175,7 +175,7 @@ export const projectsData: Project[] = [
   },
   {
     title: `My Portfolio v1`,
-    description: `My very first portfolio website helped me land my first job as a Front-End Web Developer.`,
+    description: `My very first portfolio website that helped me land my first job as a Front-End Web Developer.`,
     image: `/images/projects/my-portfolio-v1.webp`,
     links: {
       web: ``,
