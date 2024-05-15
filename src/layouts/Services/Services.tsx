@@ -28,7 +28,7 @@ export default function Services({}: Props) {
           we can collaborate to create something exceptional, tailored just for
           you.
         </p>
-        <div className={`space-x-4`}>
+        <div className={`flex flex-wrap gap-x-6 gap-y-2`}>
           {skills.map((skill, index) => (
             <span key={index}>{skill}</span>
           ))}
