@@ -160,7 +160,7 @@ export const projectsData: Project[] = [
     description: `Zouq: Your One Stop Halal Destination. Discover the ease and convenience of finding Halal products and services here in Zouq halal marketplace. Join us today and be a part of a thriving community.`,
     image: `/images/projects/zouq.webp`,
     links: {
-      web: ``,
+      web: `https://www.zouq.online/`,
       figma: `https://www.figma.com/file/EeTVDU2uQCCivXi1Rk86Ld/Zouq-Marketing?type=design&node-id=0%3A1&mode=design&t=xZxGbSvsRmTFdPB2-1`,
     },
   },
@@ -174,21 +174,12 @@ export const projectsData: Project[] = [
     },
   },
   {
-    title: `My Portfolio v1`,
-    description: `My very first portfolio website that helped me land my first job as a Front-End Web Developer.`,
-    image: `/images/projects/my-portfolio-v1.webp`,
+    title: `Ninja PH`,
+    description: `Your go-to online store for premium personal air purifiers and copper UV bottles. Browse, choose, and purchase effortlessly. Welcome to Ninja PH, your streamlined health essentials marketplace.`,
+    image: `/images/projects/ninja-ph.webp`,
     links: {
       web: ``,
-      figma: `https://www.figma.com/design/AGS57cKM9zFRxeZcbQSC6m/My-Portfolio-v1?node-id=0%3A1&t=FFlLEQPK4wBPug5A-1`,
-    },
-  },
-  {
-    title: `Nutshell`,
-    description: `Stay updated wherever, whenever. Nutshell is the go-to app for summarized yet informative news right in your hands. Download for FREE.`,
-    image: `/images/projects/nutshell.webp`,
-    links: {
-      web: `https://nutshell.ph/`,
-      figma: `https://www.figma.com/file/me0z4wephBBGY0TL92qY5f/Nutshell-Website?type=design&mode=design&t=ASoFBpHRoKqEMtwn-0`,
+      figma: `https://www.figma.com/file/uQNvWBXgxFkoISbwNiEeFB/Ninja-PH?type=design&node-id=0%3A1&mode=design&t=NFSNdpLCUZ9N6yZC-1`,
     },
   },
   {
@@ -201,12 +192,22 @@ export const projectsData: Project[] = [
     },
   },
   {
-    title: `Ninja PH`,
-    description: `Your go-to online store for premium personal air purifiers and copper UV bottles. Browse, choose, and purchase effortlessly. Welcome to Ninja PH, your streamlined health essentials marketplace.`,
-    image: `/images/projects/ninja-ph.webp`,
+    title: `Nutshell`,
+    description: `Stay updated wherever, whenever. Nutshell is the go-to app for summarized yet informative news right in your hands. Download for FREE.`,
+    image: `/images/projects/nutshell.webp`,
+    links: {
+      web: `https://nutshell.ph/`,
+      figma: `https://www.figma.com/file/me0z4wephBBGY0TL92qY5f/Nutshell-Website?type=design&mode=design&t=ASoFBpHRoKqEMtwn-0`,
+    },
+  },
+
+  {
+    title: `My Portfolio v1`,
+    description: `My very first portfolio website that helped me land my first job as a Front-End Web Developer.`,
+    image: `/images/projects/my-portfolio-v1.webp`,
     links: {
       web: ``,
-      figma: `https://www.figma.com/file/uQNvWBXgxFkoISbwNiEeFB/Ninja-PH?type=design&node-id=0%3A1&mode=design&t=NFSNdpLCUZ9N6yZC-1`,
+      figma: `https://www.figma.com/design/AGS57cKM9zFRxeZcbQSC6m/My-Portfolio-v1?node-id=0%3A1&t=FFlLEQPK4wBPug5A-1`,
     },
   },
 ];
