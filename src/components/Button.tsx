@@ -17,11 +17,10 @@ export default function Button({
     <button
       {...props}
       className={`px-8 py-4 rounded-lg text-sm font-semibold ${buttonStyle} ${
-        disabled && `opacity-40 cursor-not-allowed`
+        disabled && `opacity-40 pointer-events-none cursor-not-allowed`
       } ${className}`}
       type={type}
       style={style}
-      disabled={disabled}
     >
       {children}
     </button>
