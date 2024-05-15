@@ -10,7 +10,7 @@ export const ProjectData: Project[] = [
     icon: `palette`,
     title: 'Website Design',
     subtitle: `Captivating Designs for Lasting Impressions`,
-    description: `Ready to make a statement online? Our website design services create visually stunning sites that captivate visitors instantly. Transform your online presence and leave a lasting impression.`,
+    description: `Ready to make a statement online? My website design services create visually stunning sites that captivate visitors instantly. Transform your online presence and leave a lasting impression.`,
   },
   {
     icon: `code`,

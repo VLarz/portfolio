@@ -28,6 +28,11 @@ export default function Services({}: Props) {
           we can collaborate to create something exceptional, tailored just for
           you.
         </p>
+        <div className={`space-x-4`}>
+          {skills.map((skill, index) => (
+            <span key={index}>{skill}</span>
+          ))}
+        </div>
       </div>
       <div
         className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-8`}
