@@ -37,7 +37,7 @@ export default function Projects({ handleOpenModal }: Props) {
     <SectionContainer id="projects" className="space-y-16 -mt-40">
       <div>
         <div className={`flex justify-between`}>
-          <h1 className="text-4xl font-semibold">My Projects</h1>
+          <h1 className="text-3xl lg:text-4xl font-semibold">My Projects</h1>
           {/* <div className={`space-y-2`}> */}
           {/* <p className={`text-end text-sm`}>
               {currentPage}/{totalPages}

@@ -20,7 +20,7 @@ export default function Services({}: Props) {
   return (
     <SectionContainer id="services" className="space-y-16">
       <div className={`space-y-4`}>
-        <h1 className="text-4xl font-semibold">My Services</h1>
+        <h1 className="text-3xl lg:text-4xl font-semibold">My Services</h1>
         <p className="text-grey">
           Unlock the potential of your business with my professional services. I
           specialize in web development and web design, offering bespoke
