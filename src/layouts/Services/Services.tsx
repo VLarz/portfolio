@@ -22,13 +22,16 @@ export default function Services({}: Props) {
       <div className={`space-y-4`}>
         <h1 className="text-4xl font-semibold">My Services</h1>
         <p className="text-grey">
-          Discover my portfolio, a showcase of creative and impactful projects.
-          From web development to graphic design, each project reflects my
-          commitment to excellence. Explore the details and witness my passion
-          for innovation and problem-solving
+          Unlock the potential of your business with my professional services. I
+          specialize in web development and web design, offering bespoke
+          solutions that align with your goals. Explore my services to see how
+          we can collaborate to create something exceptional, tailored just for
+          you.
         </p>
       </div>
-      <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-8`}>
+      <div
+        className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-8`}
+      >
         {projectList.map((skill, index) => (
           <Service key={index} {...skill} />
         ))}
