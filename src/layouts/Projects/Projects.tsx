@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Pagination from '../../components/Pagination';
 import SectionContainer from '../../components/SectionContainer';
 import { projectsData } from './data';
@@ -12,6 +12,7 @@ const ITEMS_PER_PAGE = 6;
 
 export default function Projects({ handleOpenModal }: Props) {
   const [currentPage, setCurrentPage] = useState(1);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
 
   const totalPages = Math.ceil(projectsData.length / ITEMS_PER_PAGE);
 
@@ -27,6 +28,26 @@ export default function Projects({ handleOpenModal }: Props) {
     }
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isMobile) {
+      const element = document.getElementById('projects');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [currentPage, isMobile]);
+
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const paginationProjects = projectsData.slice(
     startIndex,
@@ -36,20 +57,15 @@ export default function Projects({ handleOpenModal }: Props) {
   return (
     <SectionContainer id="projects" className="space-y-16 -mt-40">
       <div>
-        <div className={`flex justify-between`}>
+        <div className="flex justify-between">
           <h1 className="text-3xl lg:text-4xl font-semibold">My Projects</h1>
-          {/* <div className={`space-y-2`}> */}
-          {/* <p className={`text-end text-sm`}>
-              {currentPage}/{totalPages}
-            </p> */}
           <Pagination
             handlePrevPage={handlePrevPage}
             handleNextPage={handleNextPage}
             currentPage={currentPage}
             totalPages={totalPages}
-            className={`hidden lg:block`}
+            className="hidden lg:block"
           />
-          {/* </div> */}
         </div>
         <p className="text-grey mt-4">
           Discover my portfolio, a showcase of creative and impactful projects.
@@ -75,7 +91,7 @@ export default function Projects({ handleOpenModal }: Props) {
           handleNextPage={handleNextPage}
           currentPage={currentPage}
           totalPages={totalPages}
-          className={`flex lg:hidden justify-center`}
+          className="flex lg:hidden justify-center"
         />
       </div>
     </SectionContainer>
