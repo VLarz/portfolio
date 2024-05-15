@@ -85,7 +85,10 @@ export default function HeroBanner({ ...props }: Props) {
               <span className={`text-white`}>appealing</span> to the eye.
             </p>
             <a
-              href="/files/DELA CUESTA, VHEN LARSON A. - RESUME.pdf"
+              href={
+                process.env.PUBLIC_URL +
+                `/files/DELA CUESTA, VHEN LARSON A. - RESUME.pdf`
+              }
               className={`block`}
               download
             >

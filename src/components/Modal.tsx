@@ -10,7 +10,7 @@ export default function Modal({ showModal, handleClose, imageSrc }: Props) {
       {showModal && (
         <div
           onClick={handleClose}
-          className={`fixed z-50 top-0 h-screen w-screen bg-black bg-opacity-70 py-8`}
+          className={`fixed z-50 top-0 h-screen w-screen bg-black bg-opacity-70 py-4`}
         >
           <img
             src={process.env.PUBLIC_URL + imageSrc}
