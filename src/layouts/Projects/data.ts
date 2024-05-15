@@ -202,7 +202,7 @@ export const projectsData: Project[] = [
   },
   {
     title: `Ninja PH`,
-    description: `lorem ipsum`,
+    description: `Your go-to online store for premium personal air purifiers and copper UV bottles. Browse, choose, and purchase effortlessly. Welcome to Ninja PH, your streamlined health essentials marketplace.`,
     image: `/images/projects/ninja-ph.webp`,
     links: {
       web: ``,
