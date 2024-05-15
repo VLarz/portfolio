@@ -11,7 +11,7 @@ type Project = {
 export const projectsData: Project[] = [
   {
     title: `Miss Universe PH 2021`,
-    description: `Explore a dynamic marketing website designed for purchasing tickets to access exclusive live digital experiences. Immerse yourself in captivating virtual events with ease and convenience.`,
+    description: `Check out a dynamic marketing website where you can buy tickets to get access to only available live digital experiences. Easily and efficiently immerse yourself in exciting virtual events.`,
     image: `/images/projects/miss-universe-ph-2021.webp`,
     links: {
       web: ``,
@@ -38,7 +38,7 @@ export const projectsData: Project[] = [
   },
   {
     title: `CopperMask`,
-    description: `A sleek online hub to buy premium masks effortlessly. Browse, select, and purchase with ease. Welcome to our streamlined mask marketplace.`,
+    description: `A stylish internet store where you can easily purchase high-quality masks. Explore, select, and buy with convenience. Greetings from our mask shop.`,
     image: `/images/projects/coppermask.webp`,
     links: {
       web: `http://www.coppermask.ph/`,
