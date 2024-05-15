@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Pagination from '../../components/Pagination';
 import SectionContainer from '../../components/SectionContainer';
 import { projectsData } from './data';
@@ -16,15 +16,30 @@ export default function Projects({ handleOpenModal }: Props) {
 
   const totalPages = Math.ceil(projectsData.length / ITEMS_PER_PAGE);
 
-  const handlePrevPage = () => {
+  const handlePrevPage = (fromBottomPagination = false) => {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
+      if (fromBottomPagination) {
+        scrollToProjects();
+      }
     }
   };
 
-  const handleNextPage = () => {
+  const handleNextPage = (fromBottomPagination = false) => {
     if (currentPage < totalPages) {
       setCurrentPage(currentPage + 1);
+      if (fromBottomPagination) {
+        scrollToProjects();
+      }
+    }
+  };
+
+  const scrollToProjects = () => {
+    if (isMobile) {
+      const element = document.getElementById('projects');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
@@ -39,15 +54,6 @@ export default function Projects({ handleOpenModal }: Props) {
     };
   }, []);
 
-  useEffect(() => {
-    if (isMobile) {
-      const element = document.getElementById('projects');
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  }, [currentPage, isMobile]);
-
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const paginationProjects = projectsData.slice(
     startIndex,
@@ -60,8 +66,8 @@ export default function Projects({ handleOpenModal }: Props) {
         <div className="flex justify-between">
           <h1 className="text-3xl lg:text-4xl font-semibold">My Projects</h1>
           <Pagination
-            handlePrevPage={handlePrevPage}
-            handleNextPage={handleNextPage}
+            handlePrevPage={() => handlePrevPage(false)}
+            handleNextPage={() => handleNextPage(false)}
             currentPage={currentPage}
             totalPages={totalPages}
             className="hidden lg:block"
@@ -87,8 +93,8 @@ export default function Projects({ handleOpenModal }: Props) {
       </div>
       <div>
         <Pagination
-          handlePrevPage={handlePrevPage}
-          handleNextPage={handleNextPage}
+          handlePrevPage={() => handlePrevPage(true)}
+          handleNextPage={() => handleNextPage(true)}
           currentPage={currentPage}
           totalPages={totalPages}
           className="flex lg:hidden justify-center"
