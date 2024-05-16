@@ -20,7 +20,7 @@ export const projectsData: Project[] = [
   },
   {
     title: `Cloud Panda PH`,
-    description: `A Cloud Panda PH company website showcasing their services, partners, achievements, and completed projects..`,
+    description: `A Cloud Panda PH company website showcasing their services, partners, achievements, and completed projects.`,
     image: `/images/projects/cloud-panda-ph.webp`,
     links: {
       web: `https://cloudpanda.ph/`,
@@ -29,7 +29,7 @@ export const projectsData: Project[] = [
   },
   {
     title: `BitLink`,
-    description: `A fully functioning Bitcoin(BTC) web wallet accessed via link (URL). Think of it like a gift card, red envelope, 红包 hóngbāo or laisee.`,
+    description: `A fully functioning Bitcoin (BTC) web wallet accessed via link (URL). Think of it like a gift card, red envelope, 红包 hóngbāo or laisee.`,
     image: `/images/projects/bitlink.webp`,
     links: {
       web: ``,
