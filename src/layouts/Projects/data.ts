@@ -19,12 +19,12 @@ export const projectsData: Project[] = [
     },
   },
   {
-    title: `Cloud Panda PH`,
-    description: `A Cloud Panda PH company website showcasing their services, partners, achievements, and completed projects.`,
-    image: `/images/projects/cloud-panda-ph.webp`,
+    title: `Ninja PH`,
+    description: `Your go-to online store for premium personal air purifiers and copper UV bottles. Browse, choose, and purchase effortlessly. Welcome to Ninja PH, your streamlined health essentials marketplace.`,
+    image: `/images/projects/ninja-ph.webp`,
     links: {
-      web: `https://cloudpanda.ph/`,
-      figma: `https://www.figma.com/file/fRWuBsFWmG4P8fDsqd12vU/Cloud-Panda-Website?type=design&node-id=0-1&mode=design&t=DMULa2VTijaTFo26-0`,
+      web: ``,
+      figma: `https://www.figma.com/file/uQNvWBXgxFkoISbwNiEeFB/Ninja-PH?type=design&node-id=0%3A1&mode=design&t=NFSNdpLCUZ9N6yZC-1`,
     },
   },
   {
@@ -174,12 +174,12 @@ export const projectsData: Project[] = [
     },
   },
   {
-    title: `Ninja PH`,
-    description: `Your go-to online store for premium personal air purifiers and copper UV bottles. Browse, choose, and purchase effortlessly. Welcome to Ninja PH, your streamlined health essentials marketplace.`,
-    image: `/images/projects/ninja-ph.webp`,
+    title: `Cloud Panda PH`,
+    description: `A Cloud Panda PH company website showcasing their services, partners, achievements, and completed projects.`,
+    image: `/images/projects/cloud-panda-ph.webp`,
     links: {
-      web: ``,
-      figma: `https://www.figma.com/file/uQNvWBXgxFkoISbwNiEeFB/Ninja-PH?type=design&node-id=0%3A1&mode=design&t=NFSNdpLCUZ9N6yZC-1`,
+      web: `https://cloudpanda.ph/`,
+      figma: `https://www.figma.com/file/fRWuBsFWmG4P8fDsqd12vU/Cloud-Panda-Website?type=design&node-id=0-1&mode=design&t=DMULa2VTijaTFo26-0`,
     },
   },
   {
