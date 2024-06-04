@@ -64,7 +64,7 @@ export default function Projects({ handleOpenModal }: Props) {
     <SectionContainer id="projects" className="space-y-16 -mt-40">
       <div>
         <div className="flex justify-between">
-          <h1 className="text-3xl lg:text-4xl font-semibold">My Projects</h1>
+          <h2 className="text-3xl lg:text-4xl font-semibold">My Projects</h2>
           <Pagination
             handlePrevPage={() => handlePrevPage(false)}
             handleNextPage={() => handleNextPage(false)}

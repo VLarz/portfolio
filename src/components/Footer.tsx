@@ -8,7 +8,9 @@ export default function Footer({}: Props) {
       <div
         className={`max-w-8xl px-6 md:px-8 lg:px-16 flex justify-between items-center w-full`}
       >
-        <h6 className={`text-xs sm:text-base`}>© 2024 Vhen Larson Dela Cuesta</h6>
+        <h3 className={`text-xs sm:text-base`}>
+          © 2024 Vhen Larson Dela Cuesta
+        </h3>
         <Socials className={`!mt-0`} />
       </div>
     </footer>

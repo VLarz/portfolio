@@ -14,8 +14,8 @@ export default function Service({ icon, title, subtitle, description }: Props) {
           alt={icon}
         />
         <div>
-          <h5 className={`font-semibold text-white`}>{title}</h5>
-          <h6 className={`text-xs text-grey`}>{subtitle}</h6>
+          <h3 className={`font-semibold text-white`}>{title}</h3>
+          <h4 className={`text-xs text-grey`}>{subtitle}</h4>
         </div>
         <p className={`text-sm text-gre`}>{description}</p>
       </div>
