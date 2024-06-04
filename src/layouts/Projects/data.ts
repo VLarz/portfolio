@@ -11,7 +11,7 @@ type Project = {
 export const projectsData: Project[] = [
   {
     title: `Miss Universe PH 2021`,
-    description: `Check out a dynamic marketing website where you can buy tickets to get access to only available live digital experiences. Easily and efficiently immerse yourself in exciting virtual events.`,
+    description: `This project provided a live broadcast of the Miss Universe Philippines 2021 competition, where viewers could purchase tickets to access exclusive live digital experiences.`,
     image: `/images/projects/miss-universe-ph-2021.webp`,
     links: {
       web: ``,
