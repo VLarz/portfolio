@@ -1,10 +1,10 @@
 {
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.sortMembers": true,
-    "source.sortImports": true,
-    "source.organizeImports": true,
-    "source.fixAll.eslint": true
+    "source.sortMembers": "explicit",
+    "source.sortImports": "explicit",
+    "source.organizeImports": "explicit",
+    "source.fixAll.eslint": "explicit"
   },
   "javascript.autoClosingTags": true,
   "typescript.autoClosingTags": true,

@@ -73,10 +73,12 @@ export default function HeroBanner({ ...props }: Props) {
       >
         <div className={`text-center lg:max-w-3xl z-10 px-6 sm:px-8 lg:px-0`}>
           <div className={`space-y-4 lg:space-y-6`}>
-            <h1 className={`text-4xl lg:text-5xl font-bold`}>
+            <h1 className={`text-3xl md:text-4xl lg:text-5xl font-bold`}>
               Hi, I’m Vhen Larson Dela Cuesta
             </h1>
-            <h2 className={`text-2xl md:text-3xl lg:text-4xl font-bold`}>
+            <h2
+              className={`text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold`}
+            >
               A <span className="typed-words" ref={textRef} />
             </h2>
             <p className={`text-md md:text-lg lg:text-xl text-grey`}>

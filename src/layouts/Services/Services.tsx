@@ -2,8 +2,6 @@ import SectionContainer from '../../components/SectionContainer';
 import { ProjectData } from './data';
 import Service from './Service';
 
-type Props = React.HTMLAttributes<HTMLDivElement>;
-
 const skills = [
   `React`,
   `Svelte`,
@@ -16,7 +14,7 @@ const skills = [
 
 const projectList = [...ProjectData];
 
-export default function Services({}: Props) {
+export default function Services() {
   return (
     <SectionContainer id="services" className="space-y-16">
       <div className={`space-y-4`}>
@@ -34,7 +32,7 @@ export default function Services({}: Props) {
         </ul>
       </div>
       <div
-        className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-8`}
+        className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-8 `}
       >
         {projectList.map((skill, index) => (
           <Service key={index} {...skill} />
