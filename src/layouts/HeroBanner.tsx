@@ -73,7 +73,7 @@ export default function HeroBanner({ ...props }: Props) {
       >
         <div className={`text-center lg:max-w-3xl z-10 px-6 sm:px-8 lg:px-0`}>
           <div className={`space-y-4 lg:space-y-6`}>
-            <h1 className={`text-3xl md:text-4xl lg:text-5xl font-bold`}>
+            <h1 className={`text-3xl sm:text-4xl lg:text-5xl font-bold`}>
               Hi, I’m Vhen Larson Dela Cuesta
             </h1>
             <h2
