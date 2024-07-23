@@ -29,7 +29,7 @@ export default function Project({
         className={`w-full h-[360px] 3xl:h-[410px] object-cover object-top cursor-zoom-in`}
         onClick={handleClick}
       />
-      <h6 className="font-semibold">{title}</h6>
+      <h3 className="font-semibold">{title}</h3>
       <p className={`text-sm text-grey`}>{description}</p>
       {(webLink || figmaLink) && (
         <div className={`flex gap-x-2`}>
