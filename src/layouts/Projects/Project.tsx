@@ -47,7 +47,6 @@ export default function Project({
       <img
         src={process.env.PUBLIC_URL + image}
         alt={title}
-        loading="lazy"
         className={`w-full h-[360px] 3xl:h-[410px] object-cover object-top cursor-zoom-in ${
           isLoading ? 'hidden' : 'block'
         }`}
