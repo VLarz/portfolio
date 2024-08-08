@@ -67,21 +67,6 @@ export default function Projects({ handleOpenModal }: Props) {
     };
   }, []);
 
-  useEffect(() => {
-    // Preload images
-    const preloadImages = () => {
-      const imageUrls = paginationProjects.map(
-        (project) => process.env.PUBLIC_URL + project.image
-      );
-      imageUrls.forEach((url) => {
-        const img = new Image();
-        img.src = url;
-      });
-    };
-
-    preloadImages();
-  }, [currentPage, paginationProjects]);
-
   return (
     <SectionContainer id="projects" className="space-y-16 -mt-40 relative z-10">
       <div>
