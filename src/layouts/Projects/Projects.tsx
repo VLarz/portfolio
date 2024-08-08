@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import debounce from 'lodash/debounce';
+import React, { useCallback, useEffect, useState } from 'react';
 import Pagination from '../../components/Pagination';
 import SectionContainer from '../../components/SectionContainer';
-import { projectsData } from './data';
 import Project from './Project';
+import { projectsData } from './data';
 
 interface Props extends React.HTMLAttributes<HTMLDivElement> {
   handleOpenModal?: (imageSrc: string) => void;
@@ -16,23 +17,29 @@ export default function Projects({ handleOpenModal }: Props) {
 
   const totalPages = Math.ceil(projectsData.length / ITEMS_PER_PAGE);
 
-  const handlePrevPage = (fromBottomPagination = false) => {
-    if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
-      if (fromBottomPagination) {
-        scrollToProjects();
+  const handlePrevPage = useCallback(
+    debounce((fromBottomPagination = false) => {
+      if (currentPage > 1) {
+        setCurrentPage((prevPage) => prevPage - 1);
+        if (fromBottomPagination) {
+          scrollToProjects();
+        }
       }
-    }
-  };
+    }, 300),
+    [currentPage]
+  );
 
-  const handleNextPage = (fromBottomPagination = false) => {
-    if (currentPage < totalPages) {
-      setCurrentPage(currentPage + 1);
-      if (fromBottomPagination) {
-        scrollToProjects();
+  const handleNextPage = useCallback(
+    debounce((fromBottomPagination = false) => {
+      if (currentPage < totalPages) {
+        setCurrentPage((prevPage) => prevPage + 1);
+        if (fromBottomPagination) {
+          scrollToProjects();
+        }
       }
-    }
-  };
+    }, 300),
+    [currentPage, totalPages]
+  );
 
   const scrollToProjects = () => {
     if (isMobile) {
