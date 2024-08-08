@@ -17,6 +17,12 @@ export default function Projects({ handleOpenModal }: Props) {
 
   const totalPages = Math.ceil(projectsData.length / ITEMS_PER_PAGE);
 
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  const paginationProjects = projectsData.slice(
+    startIndex,
+    startIndex + ITEMS_PER_PAGE
+  );
+
   const handlePrevPage = useCallback(
     debounce((fromBottomPagination = false) => {
       if (currentPage > 1) {
@@ -61,14 +67,21 @@ export default function Projects({ handleOpenModal }: Props) {
     };
   }, []);
 
-  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
-  const paginationProjects = projectsData.slice(
-    startIndex,
-    startIndex + ITEMS_PER_PAGE
-  );
+  useEffect(() => {
+    // Preload images
+    const preloadImages = () => {
+      const imageUrls = paginationProjects.map(project => process.env.PUBLIC_URL + project.image);
+      imageUrls.forEach(url => {
+        const img = new Image();
+        img.src = url;
+      });
+    };
+
+    preloadImages();
+  }, [currentPage, paginationProjects]);
 
   return (
-    <SectionContainer id="projects" className="space-y-16 -mt-40">
+    <SectionContainer id="projects" className="space-y-16 -mt-40 relative z-10">
       <div>
         <div className="flex justify-between">
           <h2 className="text-3xl lg:text-4xl font-semibold">My Projects</h2>
