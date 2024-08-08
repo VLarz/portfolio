@@ -1,3 +1,5 @@
+import React from 'react';
+
 interface Props extends React.HTMLAttributes<HTMLDivElement> {
   image: string;
   title: string;
@@ -7,19 +9,20 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
   handleOpenModal?: (imageSrc: string) => void;
 }
 
-export default function Project({
+const Project: React.FC<Props> = ({
   image,
   title,
   description,
   webLink,
   figmaLink,
   handleOpenModal,
-}: Props) {
+}) => {
   const handleClick = () => {
     if (handleOpenModal) {
       handleOpenModal(image);
     }
   };
+
   return (
     <div className={`space-y-4`}>
       <img
@@ -57,4 +60,6 @@ export default function Project({
       )}
     </div>
   );
-}
+};
+
+export default React.memo(Project);
