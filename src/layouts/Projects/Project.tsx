@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Spinner from '../../components/Spinner';
 
 interface Props extends React.HTMLAttributes<HTMLDivElement> {
   image: string;
@@ -9,28 +10,49 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
   handleOpenModal?: (imageSrc: string) => void;
 }
 
-const Project: React.FC<Props> = ({
+export default function Project({
   image,
   title,
   description,
   webLink,
   figmaLink,
   handleOpenModal,
-}) => {
-  const handleClick = () => {
+}: Props) {
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Reset loading state when the image changes
+  useEffect(() => {
+    setIsLoading(true);
+  }, [image]);
+
+  function handleClick(): void {
     if (handleOpenModal) {
       handleOpenModal(image);
     }
-  };
+  }
+
+  function handleImageLoad(): void {
+    setIsLoading(false);
+  }
 
   return (
     <div className={`space-y-4`}>
+      {isLoading && (
+        <div
+          className={`w-full h-[360px] 3xl:h-[410px] flex justify-center items-center`}
+        >
+          <Spinner />
+        </div>
+      )}
       <img
         src={process.env.PUBLIC_URL + image}
         alt={title}
         loading="lazy"
-        className={`w-full h-[360px] 3xl:h-[410px] object-cover object-top cursor-zoom-in`}
+        className={`w-full h-[360px] 3xl:h-[410px] object-cover object-top cursor-zoom-in ${
+          isLoading ? 'hidden' : 'block'
+        }`}
         onClick={handleClick}
+        onLoad={handleImageLoad}
       />
       <h3 className="font-semibold">{title}</h3>
       <p className={`text-sm text-grey`}>{description}</p>
@@ -60,6 +82,4 @@ const Project: React.FC<Props> = ({
       )}
     </div>
   );
-};
-
-export default React.memo(Project);
+}

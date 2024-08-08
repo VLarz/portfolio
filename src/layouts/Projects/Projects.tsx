@@ -70,8 +70,10 @@ export default function Projects({ handleOpenModal }: Props) {
   useEffect(() => {
     // Preload images
     const preloadImages = () => {
-      const imageUrls = paginationProjects.map(project => process.env.PUBLIC_URL + project.image);
-      imageUrls.forEach(url => {
+      const imageUrls = paginationProjects.map(
+        (project) => process.env.PUBLIC_URL + project.image
+      );
+      imageUrls.forEach((url) => {
         const img = new Image();
         img.src = url;
       });
