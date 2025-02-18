@@ -92,10 +92,11 @@ export default function HeroBanner({ ...props }: Props) {
                 `/files/DELA CUESTA, VHEN LARSON A. - RESUME.pdf`
               }
               className={`block`}
-              download
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Button type="submit" className={`!px-4 md:!px-8 !py-3 md:!py-4`}>
-                Download Resume
+                See My CV
               </Button>
             </a>
           </div>
