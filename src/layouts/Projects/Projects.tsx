@@ -20,7 +20,7 @@ export default function Projects({ handleOpenModal }: Props) {
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const paginationProjects = projectsData.slice(
     startIndex,
-    startIndex + ITEMS_PER_PAGE
+    startIndex + ITEMS_PER_PAGE,
   );
 
   const handlePrevPage = useCallback(
@@ -32,7 +32,7 @@ export default function Projects({ handleOpenModal }: Props) {
         }
       }
     }, 300),
-    [currentPage]
+    [currentPage],
   );
 
   const handleNextPage = useCallback(
@@ -44,7 +44,7 @@ export default function Projects({ handleOpenModal }: Props) {
         }
       }
     }, 300),
-    [currentPage, totalPages]
+    [currentPage, totalPages],
   );
 
   const scrollToProjects = () => {
@@ -70,16 +70,7 @@ export default function Projects({ handleOpenModal }: Props) {
   return (
     <SectionContainer id="projects" className="space-y-16 -mt-40 relative z-10">
       <div>
-        <div className="flex justify-between">
-          <h2 className="text-3xl lg:text-4xl font-semibold">My Projects</h2>
-          <Pagination
-            handlePrevPage={() => handlePrevPage(false)}
-            handleNextPage={() => handleNextPage(false)}
-            currentPage={currentPage}
-            totalPages={totalPages}
-            className="hidden lg:block"
-          />
-        </div>
+        <h2 className="text-3xl lg:text-4xl font-semibold">My Projects</h2>
         <p className="text-grey mt-4">
           Discover my portfolio, a showcase of creative and impactful projects.
           From graphic design to web development, each project shows my
@@ -104,7 +95,7 @@ export default function Projects({ handleOpenModal }: Props) {
           handleNextPage={() => handleNextPage(true)}
           currentPage={currentPage}
           totalPages={totalPages}
-          className="flex lg:hidden justify-center"
+          className="flex justify-center"
         />
       </div>
     </SectionContainer>
