@@ -5,7 +5,7 @@ import Socials from '../components/Socials';
 
 type Props = React.HTMLAttributes<HTMLDivElement>;
 
-const words = ['Front-End Web Developer', 'Web Designer'];
+const words = ['Full-Stack Web Developer', 'Web Designer'];
 
 export default function HeroBanner({ ...props }: Props) {
   const textRef = useRef<HTMLSpanElement>(null);
@@ -89,7 +89,7 @@ export default function HeroBanner({ ...props }: Props) {
             <a
               href={
                 process.env.PUBLIC_URL +
-                `/files/DELA CUESTA, VHEN LARSON A. - RESUME.pdf`
+                `/files/VHEN-LARSON-DELA-CUESTA-RESUME-FULLSTACK-DEVELOPER.pdf`
               }
               className={`block`}
               target="_blank"
