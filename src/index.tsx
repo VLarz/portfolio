@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(
 root.render(
 
   <React.StrictMode>
-    <main className={`font-inter bg-black text-white`}>
+    <main>
       <Navbar />
       <App />
       <Footer />
