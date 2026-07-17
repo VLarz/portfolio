@@ -40,7 +40,7 @@ export default function Socials({ className, style }: Props) {
           <img
             src={process.env.PUBLIC_URL + social.icon}
             alt={social.name}
-            className={`transition-opacity opacity-40 hover:opacity-100`}
+            className={`h-6 w-6 opacity-40 transition-opacity invert hover:opacity-100 dark:invert-0`}
           />
         </a>
       ))}
