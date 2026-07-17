@@ -1,31 +1,26 @@
 import { useState } from 'react';
 import Modal from './components/Modal';
+import Experience from './layouts/Experience/Experience';
 import HeroBanner from './layouts/HeroBanner';
-import Projects from './layouts/Projects/Projects';
-import MyServices from './layouts/Services/Services';
+import FeaturedWork from './layouts/Projects/FeaturedWork';
+import ProjectArchive from './layouts/Projects/ProjectArchive';
+import Services from './layouts/Services/Services';
 
 function App() {
-  const [showModal, setShowModal] = useState(false);
-  const [modalImage, setModalImage] = useState('');
+  const [modalImage, setModalImage] = useState<string | null>(null);
 
-  const handleOpenModal = (image: string) => {
-    setModalImage(image);
-    setShowModal(true);
-  };
-
-  const handleCloseModal = () => {
-    setShowModal(false);
-  };
   return (
     <>
       <Modal
-        showModal={showModal}
-        handleClose={handleCloseModal}
-        imageSrc={modalImage}
+        showModal={modalImage !== null}
+        handleClose={() => setModalImage(null)}
+        imageSrc={modalImage ?? ''}
       />
       <HeroBanner />
-      <Projects handleOpenModal={handleOpenModal} />
-      <MyServices />
+      <FeaturedWork handleOpenModal={setModalImage} />
+      <ProjectArchive handleOpenModal={setModalImage} />
+      <Experience />
+      <Services />
     </>
   );
 }
