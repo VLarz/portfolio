@@ -5,9 +5,7 @@ describe('Footer', () => {
   it('renders the contact CTA as a mailto link', () => {
     render(<Footer />);
     expect(
-      screen.getByRole('link', {
-        name: /vhenlarsondelacuesta\.1398@gmail\.com/i,
-      }),
+      screen.getByRole('link', { name: /email me/i }),
     ).toHaveAttribute('href', 'mailto:vhenlarsondelacuesta.1398@gmail.com');
   });
 
