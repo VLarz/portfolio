@@ -1,27 +1,45 @@
-type Project = {
+export type Service = {
   icon: string;
   title: string;
   subtitle: string;
   description: string;
 };
 
-export const ProjectData: Project[] = [
+export const servicesData: Service[] = [
   {
     icon: `palette`,
-    title: 'Website Design',
-    subtitle: `Fascinating Designs for Lasting Impression`,
-    description: `Ready to stand out on the internet? With my help, we can build visually attractive websites that instantly have visitors. Change the way others see you online and make an impact.`,
+    title: `Website Design`,
+    subtitle: `Designs that leave a lasting impression`,
+    description: `Figma-first design that turns visitors into customers — visual identity, layout, and UX that make you stand out online.`,
   },
   {
     icon: `code`,
-    title: 'Website Development',
-    subtitle: `Creating Usable Websites from Concepts`,
-    description: `Using your objectives in mind, my website development creates completely functional, high-performance websites. From design to development, we guarantee the strength, security, and efficiency of your website.`,
+    title: `Website Development`,
+    subtitle: `From concept to production`,
+    description: `Fast, responsive, pixel-perfect builds with modern tooling — strong, secure, and efficient from day one.`,
   },
   {
     icon: `rocket-launch`,
-    title: 'Website Redesign',
-    subtitle: `Transform Your Brand with a New Image`,
-    description: `Does the website you currently have not meet your needs? I can renew your web presence with my revamp services. Don't accept average; together, we can increase the efficacy of your website.`,
+    title: `Website Redesign`,
+    subtitle: `Transform your brand with a new image`,
+    description: `An outdated site holding you back? I modernize existing web presences end to end — design and code.`,
   },
+];
+
+export const skills = [
+  `React`,
+  `Next.js`,
+  `Svelte`,
+  `Angular`,
+  `TypeScript`,
+  `Tailwind CSS`,
+  `GSAP`,
+  `Remotion`,
+  `PostgreSQL`,
+  `MySQL`,
+  `Vitest`,
+  `Playwright`,
+  `Figma`,
+  `Illustrator`,
+  `Photoshop`,
 ];
