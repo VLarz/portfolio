@@ -5,7 +5,7 @@ import StatStrip from './StatStrip';
 
 describe('buttonClass', () => {
   it('produces distinct primary and outline styles', () => {
-    expect(buttonClass('primary')).toContain('bg-fg');
+    expect(buttonClass('primary')).toContain('bg-accent');
     expect(buttonClass('outline')).toContain('border-line');
     expect(buttonClass()).toEqual(buttonClass('primary'));
   });

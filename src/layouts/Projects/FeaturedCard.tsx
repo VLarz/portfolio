@@ -60,7 +60,8 @@ export default function FeaturedCard({ project, handleOpenModal }: Props) {
                 href={links.web}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`rounded-sm transition-colors hover:text-fg focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent`}
+                aria-label={`View ${title} live site`}
+                className={`whitespace-nowrap rounded-sm text-accent underline-offset-2 transition-colors hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent`}
               >
                 View Live ↗
               </a>
@@ -70,7 +71,8 @@ export default function FeaturedCard({ project, handleOpenModal }: Props) {
                 href={links.figma}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`rounded-sm transition-colors hover:text-fg focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent`}
+                aria-label={`View ${title} design`}
+                className={`whitespace-nowrap rounded-sm text-accent underline-offset-2 transition-colors hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent`}
               >
                 View Design ◈
               </a>

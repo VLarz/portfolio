@@ -19,24 +19,29 @@ export default function ProjectArchive({ handleOpenModal }: Props) {
             <button
               type="button"
               onClick={() => handleOpenModal?.(project.image)}
-              className={`flex flex-1 items-center justify-between gap-4 py-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent`}
+              className={`flex min-w-0 flex-1 items-center justify-between gap-4 py-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent`}
             >
-              <span className={`text-sm font-semibold sm:text-base`}>
+              <span
+                className={`min-w-0 truncate text-sm font-semibold sm:text-base`}
+              >
                 {project.title}
               </span>
               <span className={`hidden text-xs text-fg-subtle sm:block`}>
                 {project.tags.join(' · ')}
               </span>
             </button>
-            <span className={`flex items-center gap-x-3 text-sm text-fg-subtle`}>
+            <span
+              className={`flex shrink-0 items-center gap-x-4 text-xs font-medium sm:text-sm`}
+            >
               {project.links.web && (
                 <a
                   href={project.links.web}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`rounded-sm transition-colors hover:text-fg focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent`}
+                  aria-label={`View ${project.title} live site`}
+                  className={`whitespace-nowrap rounded-sm text-accent underline-offset-2 transition-colors hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent`}
                 >
-                  ↗<span className={`sr-only`}>{project.title} website</span>
+                  View Live ↗
                 </a>
               )}
               {project.links.figma && (
@@ -44,9 +49,10 @@ export default function ProjectArchive({ handleOpenModal }: Props) {
                   href={project.links.figma}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`rounded-sm transition-colors hover:text-fg focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent`}
+                  aria-label={`View ${project.title} design`}
+                  className={`whitespace-nowrap rounded-sm text-accent underline-offset-2 transition-colors hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent`}
                 >
-                  ◈<span className={`sr-only`}>{project.title} Figma</span>
+                  View Design ◈
                 </a>
               )}
             </span>
