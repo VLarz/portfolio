@@ -4,21 +4,22 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#040404" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fdfdfc" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000" />
     <meta
       name="description"
-      content="Hi, I'm Vhen Larson Dela Cuesta a Front-End Web Developer and Web Designer and I have a passion for designing web applications that are user-friendly and appealing to the eye."
+      content="Vhen Larson Dela Cuesta, Technical Lead and full-stack developer & designer crafting web products people actually enjoy using."
     />
     <meta name="author" content="Vhen Larson Dela Cuesta" />
-    <meta name="keywords" content="Front-End, Web Developer, Web Designer" />
+    <meta name="keywords" content="Technical Lead, Full-Stack Developer, Web Designer, React, TypeScript" />
     <meta name="robots" content="index, follow" />
     <meta
       property="og:title"
-      content="Vhen Larson Dela Cuesta | Front-End Web Developer & Web Designer"
+      content="Vhen Larson Dela Cuesta | Technical Lead & Full-Stack Developer"
     />
     <meta
       property="og:description"
-      content="Hi, I'm Vhen Larson Dela Cuesta a Front-End Web Developer and Web Designer."
+      content="Technical Lead and full-stack developer & designer: $10M+ DeFi loans, 1M+ users served, 40+ products shipped."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://vlarz.github.io/portfolio/" />
@@ -29,11 +30,11 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Vhen Larson Dela Cuesta | Front-End Web Developer & Web Designer"
+      content="Vhen Larson Dela Cuesta | Technical Lead & Full-Stack Developer"
     />
     <meta
       name="twitter:description"
-      content="Hi, I'm Vhen Larson Dela Cuesta a Front-End Web Developer and Web Designer and I have a passion for designing web applications that are user-friendly and appealing to the eye."
+      content="Vhen Larson Dela Cuesta, Technical Lead and full-stack developer & designer crafting web products people actually enjoy using."
     />
     <meta
       name="twitter:image"
@@ -41,11 +42,20 @@
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>
-      Vhen Larson Dela Cuesta | Front-End Web Developer & Web Designer
-    </title>
+    <title>Vhen Larson Dela Cuesta | Technical Lead & Full-Stack Developer</title>
   </head>
   <body>
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('theme');
+          var dark = stored
+            ? stored === 'dark'
+            : window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (dark) document.documentElement.classList.add('dark');
+        } catch (e) {}
+      })();
+    </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>

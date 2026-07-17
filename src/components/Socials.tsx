@@ -36,11 +36,12 @@ export default function Socials({ className, style }: Props) {
           href={social.url}
           target="_blank"
           rel="noopener noreferrer"
+          className={`rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent`}
         >
           <img
             src={process.env.PUBLIC_URL + social.icon}
             alt={social.name}
-            className={`transition-opacity opacity-40 hover:opacity-100`}
+            className={`h-6 w-6 opacity-40 transition-opacity invert hover:opacity-100 dark:invert-0`}
           />
         </a>
       ))}

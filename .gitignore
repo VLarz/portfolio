@@ -11,6 +11,11 @@
 # production
 /build
 
+# superpowers working files (brainstorm mockups, specs, plans) — kept local only
+/.superpowers
+/docs/superpowers
+/.playwright-mcp
+
 # misc
 .DS_Store
 .env.local
