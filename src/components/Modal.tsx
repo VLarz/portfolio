@@ -32,7 +32,10 @@ export default function Modal({ showModal, handleClose, imageSrc }: Props) {
           <button
             ref={closeButtonRef}
             type="button"
-            onClick={handleClose}
+            onClick={(event) => {
+              event.stopPropagation();
+              handleClose();
+            }}
             aria-label="Close"
             className={`absolute right-4 top-4 z-10 rounded-full border border-white/30 px-3 py-1 text-xl leading-none text-white transition-colors hover:border-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent`}
           >

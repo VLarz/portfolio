@@ -8,7 +8,7 @@ describe('Experience', () => {
     expect(experienceData).toHaveLength(4);
     experienceData.forEach((role) => {
       expect(
-        screen.getByText(new RegExp(`${role.title} — ${role.company}`)),
+        screen.getByText(new RegExp(`${role.title} at ${role.company}`)),
       ).toBeInTheDocument();
     });
   });

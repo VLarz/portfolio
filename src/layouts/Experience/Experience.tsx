@@ -26,7 +26,7 @@ export default function Experience() {
                 }`}
               />
               <h3 className={`font-semibold`}>
-                {role.title} — {role.company}
+                {role.title} at {role.company}
                 <span className={`ml-2 text-sm font-normal text-fg-subtle`}>
                   · {role.location} · {role.period}
                 </span>

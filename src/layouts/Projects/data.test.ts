@@ -4,7 +4,7 @@ describe('projects data', () => {
   it('has exactly 4 featured projects, each with a metric', () => {
     expect(featuredProjects.map((p) => p.title)).toEqual([
       'toktok ecosystem',
-      'TheQuestHub',
+      'TheQuestHub v2',
       'BitLink',
       'Miss Universe PH 2021',
     ]);

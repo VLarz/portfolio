@@ -27,7 +27,7 @@ export default function HeroBanner() {
         />
         <p className="mx-auto mt-6 max-w-xl text-base text-fg-muted lg:text-lg">
           Full-stack developer &amp; designer crafting web products people
-          actually enjoy using — since 2020.
+          actually enjoy using since 2020.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <a href="#work" className={buttonClass('primary')}>
