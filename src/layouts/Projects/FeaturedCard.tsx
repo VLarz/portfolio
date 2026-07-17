@@ -60,7 +60,7 @@ export default function FeaturedCard({ project, handleOpenModal }: Props) {
                 href={links.web}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`transition-colors hover:text-fg`}
+                className={`rounded-sm transition-colors hover:text-fg focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent`}
               >
                 Live ↗
               </a>
@@ -70,7 +70,7 @@ export default function FeaturedCard({ project, handleOpenModal }: Props) {
                 href={links.figma}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`transition-colors hover:text-fg`}
+                className={`rounded-sm transition-colors hover:text-fg focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent`}
               >
                 Figma ◈
               </a>

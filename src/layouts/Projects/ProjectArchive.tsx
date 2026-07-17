@@ -34,7 +34,7 @@ export default function ProjectArchive({ handleOpenModal }: Props) {
                   href={project.links.web}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`transition-colors hover:text-fg`}
+                  className={`rounded-sm transition-colors hover:text-fg focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent`}
                 >
                   ↗<span className={`sr-only`}>{project.title} website</span>
                 </a>
@@ -44,7 +44,7 @@ export default function ProjectArchive({ handleOpenModal }: Props) {
                   href={project.links.figma}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`transition-colors hover:text-fg`}
+                  className={`rounded-sm transition-colors hover:text-fg focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent`}
                 >
                   ◈<span className={`sr-only`}>{project.title} Figma</span>
                 </a>

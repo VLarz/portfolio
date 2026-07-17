@@ -13,7 +13,7 @@ export default function Footer() {
         </p>
         <a
           href="mailto:vhenlarsondelacuesta.1398@gmail.com"
-          className={`mt-4 inline-block break-all text-xl font-extrabold transition-colors hover:text-accent sm:text-2xl lg:text-3xl`}
+          className={`mt-4 inline-block break-all rounded-sm text-xl font-extrabold transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent sm:text-2xl lg:text-3xl`}
         >
           vhenlarsondelacuesta.1398@gmail.com
         </a>

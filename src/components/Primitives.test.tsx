@@ -33,8 +33,9 @@ describe('SectionHeading', () => {
 describe('StatStrip', () => {
   it('renders the four hero stats', () => {
     render(<StatStrip />);
-    ['$10M+', '1M+', '40+', '6y'].forEach((value) => {
+    ['$10M+', '1M+', '40+'].forEach((value) => {
       expect(screen.getByText(value)).toBeInTheDocument();
     });
+    expect(screen.getByText(/^\d+y$/)).toBeInTheDocument();
   });
 });

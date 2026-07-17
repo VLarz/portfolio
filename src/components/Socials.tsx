@@ -36,6 +36,7 @@ export default function Socials({ className, style }: Props) {
           href={social.url}
           target="_blank"
           rel="noopener noreferrer"
+          className={`rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent`}
         >
           <img
             src={process.env.PUBLIC_URL + social.icon}
