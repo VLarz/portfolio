@@ -54,16 +54,33 @@ const STARS: Array<{ cx: number; cy: number; r: number; accent?: boolean }> = [
   { cx: 400, cy: 480, r: 1.2 },
 ];
 
-export default function ConstellationChart() {
+// The clusters span nearly the full 0–900 viewBox height, so on wide
+// screens (full-bleed slice) they hug the top and bottom edges. Pull each
+// y-coordinate toward the vertical centre to give them breathing room.
+const CENTER_Y = 450;
+const Y_SQUASH = 0.95;
+const sy = (y: number) => CENTER_Y + (y - CENTER_Y) * Y_SQUASH;
+
+type Star = { cx: number; cy: number; r: number; accent?: boolean };
+
+// Desktop coordinates with the vertical squash baked in.
+const DESKTOP_LINES: Array<[number, number, number, number]> = LINES.map(
+  ([x1, y1, x2, y2]) => [x1, sy(y1), x2, sy(y2)],
+);
+const DESKTOP_STARS: Star[] = STARS.map((s) => ({ ...s, cy: sy(s.cy) }));
+
+function chartBody(
+  lines: Array<[number, number, number, number]>,
+  stars: Star[],
+  strokeWidth: number,
+) {
   return (
-    <svg
-      aria-hidden="true"
-      className={`backdrop-layer pointer-events-none fixed inset-0 -z-10 h-full w-full`}
-      viewBox="0 0 1440 900"
-      preserveAspectRatio="xMidYMid slice"
-    >
-      <g className={`stroke-star opacity-[0.12] dark:opacity-30`} strokeWidth="0.8">
-        {LINES.map(([x1, y1, x2, y2]) => (
+    <>
+      <g
+        className={`stroke-star opacity-[0.12] dark:opacity-30`}
+        strokeWidth={strokeWidth}
+      >
+        {lines.map(([x1, y1, x2, y2]) => (
           <line
             key={`${x1}-${y1}-${x2}-${y2}`}
             x1={x1}
@@ -73,7 +90,7 @@ export default function ConstellationChart() {
           />
         ))}
       </g>
-      {STARS.map((star) => (
+      {stars.map((star) => (
         <g key={`${star.cx}-${star.cy}`}>
           {star.accent && (
             <circle
@@ -93,6 +110,32 @@ export default function ConstellationChart() {
           />
         </g>
       ))}
-    </svg>
+    </>
+  );
+}
+
+export default function ConstellationChart() {
+  return (
+    <>
+      {/* phone: fit the whole landscape pattern (all clusters) into the
+          narrow screen — slice would land in the empty centre gap */}
+      <svg
+        aria-hidden="true"
+        className={`backdrop-layer pointer-events-none fixed inset-0 -z-10 h-full w-full sm:hidden`}
+        viewBox="0 0 1440 900"
+        preserveAspectRatio="xMidYMid meet"
+      >
+        {chartBody(DESKTOP_LINES, DESKTOP_STARS, 0.8)}
+      </svg>
+      {/* tablet + desktop: full-bleed cover */}
+      <svg
+        aria-hidden="true"
+        className={`backdrop-layer pointer-events-none fixed inset-0 -z-10 hidden h-full w-full sm:block`}
+        viewBox="0 0 1440 900"
+        preserveAspectRatio="xMidYMid slice"
+      >
+        {chartBody(DESKTOP_LINES, DESKTOP_STARS, 0.5)}
+      </svg>
+    </>
   );
 }
