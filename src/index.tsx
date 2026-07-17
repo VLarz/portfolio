@@ -16,7 +16,7 @@ root.render(
   <React.StrictMode>
     <Starfield />
     <ConstellationChart />
-    <main>
+    <main className={`pt-[81px] sm:pt-[88px]`}>
       <Navbar />
       <App />
       <Footer />

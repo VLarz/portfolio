@@ -17,9 +17,11 @@ export default function ThemeToggle() {
       type="button"
       onClick={toggle}
       aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-      className={`rounded-full border border-line px-2.5 py-1 text-sm text-fg-muted transition-colors hover:border-accent hover:text-fg focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent`}
+      className={`inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-line text-sm text-fg-muted transition-colors hover:border-accent hover:text-fg focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent`}
     >
-      {isDark ? '☀' : '☾'}
+      <span aria-hidden="true" className={`leading-none`}>
+        {isDark ? '☀' : '☾'}
+      </span>
     </button>
   );
 }
