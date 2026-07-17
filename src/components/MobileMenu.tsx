@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 
 type NavItem = {
   url: string;
@@ -81,13 +82,14 @@ export default function MobileMenu({ items }: Props) {
         </svg>
       </button>
 
-      {open && (
-        <div
-          className={`fixed inset-0 z-50`}
-          role="dialog"
-          aria-modal="true"
-          aria-label="Site menu"
-        >
+      {open &&
+        createPortal(
+          <div
+            className={`fixed inset-0 z-50`}
+            role="dialog"
+            aria-modal="true"
+            aria-label="Site menu"
+          >
           <button
             type="button"
             aria-label="Close menu"
@@ -142,8 +144,9 @@ export default function MobileMenu({ items }: Props) {
               </ul>
             </div>
           </div>
-        </div>
-      )}
+          </div>,
+          document.body,
+        )}
     </div>
   );
 }

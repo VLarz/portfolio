@@ -26,7 +26,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed inset-x-0 top-0 z-40 flex justify-center border-b py-6 transition-colors duration-300 ${
+      className={`fixed inset-x-0 top-0 z-40 flex justify-center border-b py-4 transition-colors duration-300 ${
         scrolled
           ? `border-line/60 bg-bg/70 backdrop-blur-md`
           : `border-transparent bg-transparent`

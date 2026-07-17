@@ -61,7 +61,7 @@ export default function ProjectArchive({ handleOpenModal }: Props) {
               alt=""
               aria-hidden="true"
               loading="lazy"
-              className={`pointer-events-none absolute right-16 top-1/2 z-20 hidden w-56 -translate-y-1/2 rounded-md border border-line shadow-2xl lg:group-hover:block`}
+              className={`pointer-events-none absolute right-16 top-1/2 z-20 hidden w-[28em] -translate-y-1/2 rounded-md border border-line shadow-2xl lg:group-hover:block`}
             />
           </li>
         ))}
