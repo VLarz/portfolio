@@ -51,10 +51,10 @@ export default function FeaturedCard({ project, handleOpenModal }: Props) {
         </div>
         <p className={`text-sm text-fg-muted`}>{description}</p>
         <div
-          className={`flex items-center justify-between text-xs text-fg-subtle`}
+          className={`flex flex-col sm:flex-row items-start sm:items-center justify-between text-xs text-fg-subtle gap-y-2`}
         >
           <span>{tags.join(' · ')}</span>
-          <span className={`flex gap-x-3`}>
+          <span className={`flex gap-x-3 self-end sm:self-start`}>
             {links.web && (
               <a
                 href={links.web}
@@ -62,7 +62,7 @@ export default function FeaturedCard({ project, handleOpenModal }: Props) {
                 rel="noopener noreferrer"
                 className={`rounded-sm transition-colors hover:text-fg focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent`}
               >
-                Live ↗
+                View Live ↗
               </a>
             )}
             {links.figma && (
@@ -72,7 +72,7 @@ export default function FeaturedCard({ project, handleOpenModal }: Props) {
                 rel="noopener noreferrer"
                 className={`rounded-sm transition-colors hover:text-fg focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent`}
               >
-                Figma ◈
+                View Design ◈
               </a>
             )}
           </span>
