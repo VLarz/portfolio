@@ -2,7 +2,7 @@ export default function Starfield() {
   return (
     <div
       aria-hidden="true"
-      className={`pointer-events-none fixed inset-0 -z-10`}
+      className={`backdrop-layer pointer-events-none fixed inset-0 -z-10`}
     >
       {/* accent nebula glow — both themes */}
       <div className={`nebula-glow absolute inset-0`} />

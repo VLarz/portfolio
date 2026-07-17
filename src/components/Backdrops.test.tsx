@@ -16,4 +16,18 @@ describe('decorative backdrops', () => {
     expect(root).toHaveAttribute('aria-hidden', 'true');
     expect(root.getAttribute('class')).toContain('pointer-events-none');
   });
+
+  // These fixed backdrops must stay on their own GPU compositor layer, or
+  // mobile Chrome drops them when the URL bar collapses on scroll-down.
+  it('Starfield is promoted to its own compositor layer', () => {
+    const { container } = render(<Starfield />);
+    const root = container.firstElementChild as HTMLElement;
+    expect(root.className).toContain('backdrop-layer');
+  });
+
+  it('ConstellationChart is promoted to its own compositor layer', () => {
+    const { container } = render(<ConstellationChart />);
+    const root = container.firstElementChild as HTMLElement;
+    expect(root.getAttribute('class')).toContain('backdrop-layer');
+  });
 });

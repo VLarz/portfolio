@@ -93,6 +93,17 @@
     animation: twinkle 6s ease-in-out infinite alternate;
     background-position: 240px 190px;
   }
+
+  /* Keep the fixed decorative backdrops on their own GPU compositor layer.
+     Mobile Chrome resizes the viewport when the URL bar collapses on
+     scroll-down, and an un-promoted fixed layer can fail to repaint into
+     the newly-exposed area (backdrop vanishes until you scroll back up). */
+  .backdrop-layer {
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: transform;
+  }
 }
 
 @keyframes twinkle {
