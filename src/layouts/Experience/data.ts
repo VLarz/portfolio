@@ -21,7 +21,7 @@ export const experienceData: Role[] = [
     company: `Sesimi`,
     location: `Melbourne, Australia`,
     period: `Feb 2023 - Mar 2025`,
-    summary: `Turned PDF brand guidelines into production component libraries for 20+ clients including Toyota, Volkswagen, and Lexus.`,
+    summary: `Turned PDF brand guidelines into production component libraries for 20+ clients including Toyota, Volkswagen, and Lexus. Introduced AI tooling and automation across Design Engineer and Customer Success teams.`,
   },
   {
     title: `Web3 Front-End & UI/UX Designer`,

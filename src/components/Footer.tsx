@@ -19,7 +19,7 @@ export default function Footer() {
         </a>
         <Socials className={`mt-6`} />
         <p className={`mt-10 text-xs text-fg-subtle`}>
-          © 2026 Vhen Larson Dela Cuesta ✦
+          © {new Date().getFullYear()} Vhen Larson Dela Cuesta ✦
         </p>
       </div>
     </footer>
