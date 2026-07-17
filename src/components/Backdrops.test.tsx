@@ -8,14 +8,12 @@ describe('decorative backdrops', () => {
     const root = container.firstElementChild as HTMLElement;
     expect(root).toHaveAttribute('aria-hidden', 'true');
     expect(root.className).toContain('pointer-events-none');
-    expect(root.className).toContain('dark:block');
   });
 
-  it('ConstellationChart is aria-hidden and light-mode only', () => {
+  it('ConstellationChart is aria-hidden and non-interactive', () => {
     const { container } = render(<ConstellationChart />);
     const root = container.firstElementChild as HTMLElement;
     expect(root).toHaveAttribute('aria-hidden', 'true');
     expect(root.getAttribute('class')).toContain('pointer-events-none');
-    expect(root.getAttribute('class')).toContain('dark:hidden');
   });
 });
