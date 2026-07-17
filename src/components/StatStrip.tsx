@@ -27,7 +27,7 @@ const stats: Stat[] = [
 export default function StatStrip() {
   return (
     <div
-      className={`mt-12 flex flex-wrap justify-center gap-x-10 gap-y-4 border-t border-line pt-6`}
+      className={`mt-12 grid grid-cols-2 gap-x-6 gap-y-6 border-t border-line pt-6 sm:grid-cols-4 sm:gap-x-10 sm:gap-y-4`}
     >
       {stats.map((stat) => (
         <div key={stat.label} className={`text-center`}>
