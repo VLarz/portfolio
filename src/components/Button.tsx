@@ -1,27 +1,28 @@
-interface Props extends React.HTMLAttributes<HTMLButtonElement> {
-  type: 'button' | 'submit' | 'reset';
-  disabled?: boolean;
+type Variant = 'primary' | 'outline';
+
+const BASE = `inline-block rounded-sm px-6 py-3 text-sm font-semibold transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent`;
+
+const VARIANTS: Record<Variant, string> = {
+  primary: `bg-fg text-bg hover:opacity-90`,
+  outline: `border border-line text-fg-muted hover:border-accent hover:text-fg`,
+};
+
+export function buttonClass(variant: Variant = 'primary') {
+  return `${BASE} ${VARIANTS[variant]}`;
+}
+
+interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: Variant;
 }
 
 export default function Button({
-  type,
-  className,
-  style,
+  variant = 'primary',
+  className = '',
   children,
-  disabled,
   ...props
 }: Props) {
-  let buttonStyle = `bg-white text-black drop-shadow-[0_4px_0_rgba(255,255,255,0.7)]`;
-
   return (
-    <button
-      {...props}
-      className={`px-8 py-4 rounded-lg text-sm font-semibold ${buttonStyle} ${
-        disabled && `opacity-40 pointer-events-none cursor-not-allowed`
-      } ${className}`}
-      type={type}
-      style={style}
-    >
+    <button type="button" {...props} className={`${buttonClass(variant)} ${className}`}>
       {children}
     </button>
   );
