@@ -30,10 +30,10 @@ export default function StatStrip() {
       className={`mt-12 grid grid-cols-2 gap-x-6 gap-y-6 border-t border-line pt-6 sm:grid-cols-4 sm:gap-x-10 sm:gap-y-4`}
     >
       {stats.map((stat) => (
-        <div key={stat.label} className={`text-center`}>
+        <div key={stat.label} className={`text-center uppercase`}>
           <div className={`text-xl font-extrabold`}>{stat.value}</div>
           <div
-            className={`text-[10px] uppercase tracking-[0.2em] text-fg-subtle`}
+            className={`text-[10px] tracking-[0.2em] text-fg-subtle`}
           >
             {stat.label}
           </div>
