@@ -17,7 +17,7 @@ export const experienceData: Role[] = [
     current: true,
   },
   {
-    title: `Full-Stack Developer`,
+    title: `Design Engineer`,
     company: `Sesimi`,
     location: `Melbourne, Australia`,
     period: `Feb 2023 - Mar 2025`,

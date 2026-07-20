@@ -11,7 +11,7 @@ export default function HeroBanner() {
     <SectionContainer className="relative">
       <div className="mx-auto max-w-3xl py-10 text-center lg:py-20">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-star">
-          — Technical Lead · Sesimi —
+          — Full-Stack Developer —
         </p>
         <h1 className="mt-5 text-4xl font-extrabold uppercase leading-tight tracking-tight sm:text-5xl lg:text-6xl">
           Vhen Larson
@@ -23,8 +23,8 @@ export default function HeroBanner() {
           className="mx-auto mt-6 h-px w-20 bg-gradient-to-r from-transparent via-accent to-transparent"
         />
         <p className="mx-auto mt-6 max-w-xl text-base text-fg-muted lg:text-lg">
-          Full-stack developer and designer building web products people
-          genuinely enjoy using since 2020.
+          Full-stack developer who designs. I build web products with a strong
+          eye for detail, so they look as good as they work.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <a href="#work" className={buttonClass('primary')}>
